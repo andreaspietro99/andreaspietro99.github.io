@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Azienda Agricola Morra Andreas</title>
+
+        <!-- font da Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="./images/logo/logo_tab.ico">
+        <link rel="stylesheet" href="./style/index.css">
+
+        <meta name="description" content="Azienda agricola Morra Andreas">
+        <meta name="author" content="Pietro Cagnasso">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <script language="javascript">
+            var msgIndex = 1;
+            var msgs = new Array(
+                "LINGUE DISPONIBILI",
+                "AVAILABLE LANGUAGES",
+                "VERFÜGBARE SPRACHEN"
+            );
+
+            function changeMessage(milliseconds) {
+                if (msgIndex >= msgs.length) {
+                    msgIndex = 0;
+                }
+                if (document.getElementById != null) {
+                    var heading = document.getElementById("header-language-selector");
+                    heading.firstChild.nodeValue = msgs[msgIndex];
+                }
+                msgIndex++;
+                window.setTimeout(function(){changeMessage(milliseconds);}, milliseconds);
+            }
+        </script>
+    </head>
+    <body onload="window.setTimeout(function(){changeMessage(5000);}, 5000);">
+        <img id="logo" src="./images/logo/logo_nobg_brown.png">
+        <div id="language-selector">
+            <h1 id="header-language-selector">LINGUE DISPONIBILI</h1>
+            <div id="languages">
+                <a class="language" href="#"><p>ITALIANO</p></a>
+                <a class="language" href="#"><p>ENGLISH</p></a>
+                <a class="language" href="#"><p>DEUTSCHE</p></a>
+            </div>
+        </div>
+    </body>
+</html>
