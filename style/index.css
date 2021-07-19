@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     border: 0;
     height: 100vh;
-    widht: 100vw;
+    width: 100vw;
 }
 
 body {
@@ -123,6 +123,35 @@ body {
     100% {border: 2px solid #42321E;}
 }
 
+.language:not(:hover) {
+    border-color: transparent;
+    animation: fadeOutBorder .5s;
+    -webkit-animation: fadeOutBorder .5s;
+    -moz-animation: fadeOutBorder .5s;
+    -o-animation: fadeOutBorder .5s;
+    -ms-animation: fadeOutBorder .5s;
+}
+@keyframes fadeOutBorder {
+    0% {border: 2px solid #42321E;}
+    100% {border: 2px solid transparent;}
+}
+@-moz-keyframes fadeOutBorder {
+    0% {border: 2px solid #42321E;}
+    100% {border: 2px solid transparent;}
+}
+@-webkit-keyframes fadeOutBorder {
+    0% {border: 2px solid #42321E;}
+    100% {border: 2px solid transparent;}
+}
+@-o-keyframes fadeOutBorder {
+    0% {border: 2px solid #42321E;}
+    100% {border: 2px solid transparent;}
+}
+@-ms-keyframes fadeOutBorder {
+    0% {border: 2px solid #42321E;}
+    100% {border: 2px solid transparent;}
+}
+
 .language:visited {
     color: #42321E;
 }
@@ -174,12 +203,6 @@ body {
         align-items: center;
         border: 1px solid #42321E;
         margin: 2px;
-    }
-    .language:active {
-        background-color: rgba(66, 50, 30, .3);
-    }
-    .language:hover {
-        border-color: #42321E;
     }
 }
 

@@ -1,0 +1,304 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    overflow: overlay;
+    font-family: "Playfair Display";
+    background-color: #dadada;
+}
+
+.main-banner {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(52, 177, 235);
+}
+
+.logo {
+    content: url("../images/logo/logo_dadada_nobg.png");
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-height: 70vh;
+    max-width: 60vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.top-bar {
+    position: absolute;
+    left: 1vw;
+    right: 1vw;
+    top: 1vw;
+    overflow: hidden;
+    width: 98vw;
+    height: 7vh;
+}
+
+.top-bar a {
+    float: left;
+    color: #dadada;
+    text-align: center;
+    text-decoration: none;
+}
+
+.top-logo{
+    content: url("../images/logo/logo_dadada_nobg_nowr.png");
+    position: absolute;
+    height: 100%;
+}
+
+.top-bar-right {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar-right a {
+    padding: 15px;
+}
+.top-bar-right a.language {
+    padding: 8px;
+}
+
+.top-bar-right h1 {
+    font-size: max(min(1.5vw, 25px), 18px);
+    margin: 0 0;
+}
+
+.language {
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.language:visited {
+    color: #dadada;
+}
+
+.language:hover {
+    border-color: #dadada;
+    animation: fadeInBorder .5s;
+    -webkit-animation: fadeInBorder .5s;
+    -moz-animation: fadeInBorder .5s;
+    -o-animation: fadeInBorder .5s;
+    -ms-animation: fadeInBorder .5s;
+}
+@keyframes fadeInBorder {
+    0% {border: 2px solid transparent;}
+    100% {border: 2px solid #dadada;}
+}
+@-moz-keyframes fadeInBorder {
+    0% {border: 2px solid transparent;}
+    100% {border: 2px solid #dadada;}
+}
+@-webkit-keyframes fadeInBorder {
+    0% {border: 2px solid transparent;}
+    100% {border: 2px solid #dadada;}
+}
+@-o-keyframes fadeInBorder {
+    0% {border: 2px solid transparent;}
+    100% {border: 2px solid #dadada;}
+}
+@-ms-keyframes fadeInBorder {
+    0% {border: 2px solid transparent;}
+    100% {border: 2px solid #dadada;}
+}
+.language:not(:hover) {
+    border-color: transparent;
+    animation: fadeOutBorder .5s;
+    -webkit-animation: fadeOutBorder .5s;
+    -moz-animation: fadeOutBorder .5s;
+    -o-animation: fadeOutBorder .5s;
+    -ms-animation: fadeOutBorder .5s;
+}
+@keyframes fadeOutBorder {
+    0% {border: 2px solid #dadada;}
+    100% {border: 2px solid transparent;}
+}
+@-moz-keyframes fadeOutBorder {
+    0% {border: 2px solid #dadada;}
+    100% {border: 2px solid transparent;}
+}
+@-webkit-keyframes fadeOutBorder {
+    0% {border: 2px solid #dadada;}
+    100% {border: 2px solid transparent;}
+}
+@-o-keyframes fadeOutBorder {
+    0% {border: 2px solid #dadada;}
+    100% {border: 2px solid transparent;}
+}
+@-ms-keyframes fadeOutBorder {
+    0% {border: 2px solid #dadada;}
+    100% {border: 2px solid transparent;}
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger {
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    width: 5px;
+    height: 5px;
+    margin: 3px 0;
+    background-color: #dadada;
+}
+
+.hamburger:hover > .bar {
+    width: 35px;
+    animation: enlarge .5s;
+    -webkit-animation: enlarge .5s;
+    -moz-animation: enlarge .5s;
+    -o-animation: enlarge .5s;
+    -ms-animation: enlarge .5s;
+}
+@keyframes enlarge {
+    0% {width: 5px;}
+    100% {width: 35px;}
+}
+@-moz-keyframes enlarge {
+    0% {width: 5px;}
+    100% {width: 35px;}
+}
+@-webkit-keyframes enlarge {
+    0% {width: 5px;}
+    100% {width: 35px;}
+}
+@-o-keyframes enlarge {
+    0% {width: 5px;}
+    100% {width: 35px;}
+}
+@-ms-keyframes enlarge {
+    0% {width: 5px;}
+    100% {width: 35px;}
+}
+.hamburger:not(:hover) > .bar {
+    width: 5px;
+    animation: reduce .5s;
+    -webkit-animation: reduce .5s;
+    -moz-animation: reduce .5s;
+    -o-animation: reduce .5s;
+    -ms-animation: reduce .5s;
+}
+@keyframes reduce {
+    0% {width: 35px;}
+    100% {width: 5px;}
+}
+@-moz-keyframes reduce {
+    0% {width: 35px;}
+    100% {width: 5px;}
+}
+@-webkit-keyframes reduce {
+    0% {width: 35px;}
+    100% {width: 5px;}
+}
+@-o-keyframes reduce {
+    0% {width: 35px;}
+    100% {width: 5px;}
+}
+@-ms-keyframes reduce {
+    0% {width: 35px;}
+    100% {width: 5px;}
+}
+
+@media (max-aspect-ratio: 3/4){
+    .top-bar {
+        width: 100%;
+        height: 7vh;
+        background-color: #dadada;
+        
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .top-logo{
+        content: url("../images/logo/logo_42321e_nobg_nowr.png");
+        position: absolute;
+        height: 100%;
+    }
+
+    .top-bar a {
+        color: #42321e;
+    }
+
+    .bar {
+        background-color: #42321e;
+        width: 35px;
+    }
+    .hamburger:hover > .bar {
+        width: 35px;
+        animation: none;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+        -ms-animation: none;
+    }
+    .hamburger:not(:hover) > .bar {
+        width: 35px;
+        animation: none;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+        -ms-animation: none;
+    }
+}
+
+
+/* Scroll bar personalization */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .6); 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, .85);
+}
