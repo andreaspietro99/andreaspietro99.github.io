@@ -10,7 +10,7 @@ body {
     overflow: overlay;
     font-family: "Playfair Display";
     color: #42321E;
-    background-color: #dadada;
+    background-color: #DCD3C8;
     height: 100vh;
     width: 100vw;
 }
@@ -161,7 +161,7 @@ body {
     width: auto;
 }
 
-@media (max-aspect-ratio: 3/4){
+@media (max-aspect-ratio: 3/4), (min-resolution: 300dpi) and (orientation: portrait){
     #logo {
         height: auto;
         width: auto;
