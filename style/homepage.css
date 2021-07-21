@@ -350,6 +350,7 @@ body {
     align-content: center;
     margin: 0;
     flex: 1;
+    text-align: center;
 }
 
 .legal-info a {

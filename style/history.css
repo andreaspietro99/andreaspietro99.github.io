@@ -8,6 +8,7 @@ body {
     overflow: overlay;
     font-family: "Playfair Display";
     background-color: #DCD3C8;
+    color: #42321e;
 }
 
 .main-banner {
@@ -74,7 +75,7 @@ body {
 }
 
 .language:visited {
-    color: #DCD3C8;
+    color: #42321e;
 }
 
 .language:hover {
@@ -282,6 +283,83 @@ body {
     100% {border: 2px solid transparent;}
 }
 
+.slideshow {
+    position: relative;
+    width: 100%;
+    bottom: 20px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.thumbnail {
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: auto;
+    padding: 16px;
+    color: #dcd3c8;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-caption-container {
+    text-align: center;
+    padding: 2px 16px;
+    border: 2px solid #42321e;
+}
+
+#slide-caption {
+    color: #42321e;
+}
+
+.thumbnails:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.thumbnails {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.thumbnail {
+    flex: 1;
+    margin: auto;
+}
+
+.preview {
+    position: relative;
+    opacity: 0.4;
+}
+
+.active, .preview:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
 .bottom-banner {
     overflow: hidden;
     position: relative;
@@ -331,6 +409,7 @@ body {
 }
 
 .legal-info p {
+    text-align: center;
     align-content: center;
     margin: 0;
     flex: 1;
@@ -471,6 +550,20 @@ body {
         border: 2px solid #42321e;
         animation: none;
         -webkit-animation: none;
+    }
+
+    .slideshow {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .thumbnails {
+        height: 0;
+    }
+
+    .thumbnail {
+        visibility: hidden;
     }
 
     .company-info {
