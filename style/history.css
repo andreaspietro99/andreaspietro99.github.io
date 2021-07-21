@@ -11,58 +11,34 @@ body {
 }
 
 .main-banner {
-    height: 100vh;
+    position: relative;
+    height: 50vh;
     width: 100vw;
-    background-image: url("../images/homepage/homepage_bg.jpg");
+    background-image: url("../images/history/history_bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 4px solid #b4aca2;
 }
 
-.logo {
-    content: url("../images/logo/logo_dcd3c8_nobg.png");
-    position: absolute;
-    height: auto;
-    width: auto;
-    max-height: 70vh;
-    max-width: 60vw;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-
-    animation: fadeIn 2s;
-    -webkit-animation: fadeIn 2s;
-}
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-@-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
 .top-bar {
+    background-color: #dcd3c8;
     position: absolute;
-    left: 1vw;
-    right: 1vw;
-    top: 1vw;
     overflow: hidden;
-    width: 98vw;
+    width: 100%;
     height: 7vh;
+    border-bottom: 4px solid #b4aca2;
 }
 
 .top-bar a {
     float: left;
-    color: #DCD3C8;
+    color: #42321e;
     text-align: center;
     text-decoration: none;
 }
 
 .top-logo{
-    content: url("../images/logo/logo_dcd3c8_nobg_nowr.png");
+    content: url("../images/logo/logo_42321e_nobg_nowr.png");
     position: absolute;
     height: 80%;
     top:50%;
@@ -102,17 +78,17 @@ body {
 }
 
 .language:hover {
-    border-color: #DCD3C8;
+    border-color: #42321e;
     animation: fadeInBorder .5s;
     -webkit-animation: fadeInBorder .5s;
 }
 @keyframes fadeInBorder {
     0% {border: 2px solid transparent;}
-    100% {border: 2px solid #DCD3C8;}
+    100% {border: 2px solid #42321e;}
 }
 @-webkit-keyframes fadeInBorder {
     0% {border: 2px solid transparent;}
-    100% {border: 2px solid #DCD3C8;}
+    100% {border: 2px solid #42321e;}
 }
 .language:not(:hover) {
     border-color: transparent;
@@ -120,11 +96,11 @@ body {
     -webkit-animation: fadeOutBorder 1s;
 }
 @keyframes fadeOutBorder {
-    0% {border: 2px solid #DCD3C8;}
+    0% {border: 2px solid #42321e;}
     100% {border: 2px solid transparent;}
 }
 @-webkit-keyframes fadeOutBorder {
-    0% {border: 2px solid #DCD3C8;}
+    0% {border: 2px solid #42321e;}
     100% {border: 2px solid transparent;}
 }
 
@@ -148,7 +124,7 @@ body {
     width: 5px;
     height: 5px;
     margin: 3px 0;
-    background-color: #DCD3C8;
+    background-color: #42321e;
 }
 
 .hamburger:hover > .bar {
@@ -180,13 +156,15 @@ body {
 
 .container {
     position: relative;
-    width: 70%;
+    width: 80%;
     max-width: 1400px;
     left: 50%;
     transform: translate(-50%, 0);
     display: block;
 }
+
 .claim {
+    margin: 8px;
     width: 90%;
     position: relative;
     left: 50%;
@@ -209,24 +187,34 @@ body {
     max-width: 500px;
 }
 
-.history {
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
+.caption {
+    margin: 4px;
+    text-align: center;
+}
+
+.trenta {
     width: 35vw;
     height: auto;
 }
 
-.products {
-    width: 33vw;
+.bisnonni {
+    width: 35vw;
     height: auto;
 }
 
-.contacts {
-    width: 37vw;
-    height: auto;
+.nonno {
+    height: 60vh;
+    width: auto;
 }
 
 .photo {
-    max-width: 700px;
     max-height: 35vh;
+    margin: auto;
 }
 
 .description {
@@ -235,26 +223,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: justify;
+    margin: auto;
 }
 
 .text {
-    width: 100%;
-    height: 50%;
+    font-family: "Open sans";
+    font-weight: 500;
+    letter-spacing: 0px;
+    font-size: max(min(1.5vw, 22px), 18px);
+    margin: 8px;
 }
 
-.text p {
+.title p {
     font-size: max(min(3vw, 40px), 25px);
     width: 100%;
     height: 100%;
-}
-
-.left .description {
-    float: left;
-}
-
-.right {
-    text-align: right;
+    margin: auto;
+    text-align: center;
 }
 
 .redirect {
@@ -263,8 +249,6 @@ body {
     border: 2px solid transparent;
     border-radius: 5px;
     padding: 8px;
-    text-decoration: none;
-    color:#42321e;
 }
 
 .redirect:visited {
@@ -379,25 +363,6 @@ body {
 }
 
 @media (max-aspect-ratio: 3/4), (min-resolution: 300dpi) and (orientation: portrait){
-    .top-bar {
-        width: 100%;
-        height: 7vh;
-        background-color: #DCD3C8;
-        border-bottom: 4px solid #b4aca2;
-        
-        left: 0;
-        right: 0;
-        top: 0;
-    }
-
-    .top-logo{
-        content: url("../images/logo/logo_42321e_nobg_nowr.png");
-        position: absolute;
-        height: 80%;
-        top: 50%;
-        transform: translate(0, -50%);
-    }
-
     .top-bar-right {
         right: 2%;
     }
@@ -460,6 +425,10 @@ body {
     .photo {
         width: 90%;
     }
+    .nonno {
+        height: 60vh;
+        width: auto;
+    }
     
     .description {
         width: 100%;
@@ -471,7 +440,7 @@ body {
     }
     
     .text {
-        width: 100%;
+        width: 95%;
         height: 50%;
     }
     

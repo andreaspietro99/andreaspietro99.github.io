@@ -16,3 +16,6 @@
 20/7
 09:30-12.00: REALIZZAZIONE: bottom infobar, modifica scrollbar; RICERCHE: full page menu
 14.00-17.00: REALIZZAZIONE: cambio colore fondamentale chiaro da #dadada a #dcd3c8, homepage in versione mobile per italiano, inglese e tedesco
+
+21/7
+09.15-12.45: REALIZZAZIONE historypage in italiano, manca la photo gallery
