@@ -20,3 +20,6 @@
 21/7
 09.15-12.45: REALIZZAZIONE: historypage in italiano
 14.00-17.00: REALIZZAZIONE: slideshow gallery, historypage in inglese e tedesco, historypage in versione mobile per italiano e inglese e tedesco
+
+25/7
+09.30-12.00: REALIZZAZIONE: productspage in italiano
