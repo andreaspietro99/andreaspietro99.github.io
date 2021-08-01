@@ -1,25 +1,29 @@
-17/7
+17/07
 10.30-12.30: STUDIO: responsive design, elementi di grafica
 14.30-16.30: STUDIO: responsive design per versione mobile; RIPASSO: html, css, js
 18.00-19.00: RICERCHE: animazioni, font
 
-18/7
+18/07
 10.00-12.00: REALIZZAZIONE: landing page di selezione della lingua
 14.30-16.00: REALIZZAZIONE: landing page di selezione in versione mobile
 17.30-19.00: RICERCHE: immagini full screen con possibilità di scoll al di sotto, top navbar, animazione hamburger menu
 
-19/7
+19/07
 09.30-11.00: REALIZZAZIONE: main banner homepage full screen, top navbar
 14.00-16.00: REALIZZAZIONE: sezione contenuti homepage
 16.30-17.30: REALIZZAZIONE: homepage inglese e tedesco, con link di scambio
 
-20/7
+20/07
 09:30-12.00: REALIZZAZIONE: bottom infobar, modifica scrollbar; RICERCHE: full page menu
 14.00-17.00: REALIZZAZIONE: cambio colore fondamentale chiaro da #dadada a #dcd3c8, homepage in versione mobile per italiano e inglese e tedesco
 
-21/7
+21/07
 09.15-12.45: REALIZZAZIONE: historypage in italiano
 14.00-17.00: REALIZZAZIONE: slideshow gallery, historypage in inglese e tedesco, historypage in versione mobile per italiano e inglese e tedesco
 
-25/7
+25/07
 09.30-12.00: REALIZZAZIONE: productspage in italiano
+15.00-17.00: REALIZZAZIONE: productspage in inglese e tedesco; 
+
+01/08
+09.30-12.30: REALIZZAZIONE:versione mobile della productspage; correzione titoli tab; collegamento link di reindirizzo; correzioni minori su tutte le pagine (link, infobanner)
