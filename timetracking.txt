@@ -26,4 +26,5 @@
 15.00-17.00: REALIZZAZIONE: productspage in inglese e tedesco; 
 
 01/08
-09.30-12.30: REALIZZAZIONE:versione mobile della productspage; correzione titoli tab; collegamento link di reindirizzo; correzioni minori su tutte le pagine (link, infobanner)
+09.30-12.30: REALIZZAZIONE: versione mobile della productspage; correzione titoli tab; collegamento link di reindirizzo; correzioni minori su tutte le pagine (link, infobanner)
+15.00-18.30: REALIZZAZIONE: contactpage in italiano, inglese e tedesco in versione mobile e desktop con relativi link

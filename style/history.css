@@ -165,12 +165,17 @@ body {
 }
 
 .claim {
-    width: 90%;
-    position: relative;
+    margin: 0;
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     font-size: max(min(3.5vw, 50px), 30px);
+    color: #dcd3c8;
+    background-color: rgba(66, 50, 30, .6);
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .section {
@@ -236,7 +241,7 @@ body {
 }
 
 .title p {
-    font-size: max(min(3vw, 40px), 25px);
+    font-size: max(min(3.5vw, 30px), 22px);
     width: 100%;
     height: 100%;
     margin: auto;
