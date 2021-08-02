@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    overflow: overlay;
+    font-family: "Playfair Display";
+    background-color: #DCD3C8;
+}
+
+.container {
+    position: relative;
+    width: 70%;
+    max-width: 1400px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    text-align: center;
+}
+
+.divider {
+    border-top: 2px solid #a8a8a8;
+    border-radius: 2px;
+    width: 50%;
+    max-width: 500px;
+}
+
+@media (max-aspect-ratio: 3/4), (min-resolution: 300dpi) and (orientation: portrait){
+    .container {
+        width: 100vw;
+        max-width: none;
+        left: 0;
+        transform: none;
+        display: block;
+    }
+
+    .divider {
+        width: 50%;
+        max-width: 500px;
+    }
+}
+
+/* Scroll bar personalization */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .6); 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, .85);
+}

@@ -1,0 +1,141 @@
+.bottom-banner {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #42321e;
+    border-top: 4px solid #b4aca2;
+    color: #DCD3C8;
+    font-family: "Open sans";
+}
+
+.company-info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.dev-info {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    font-size: 14px;
+}
+
+.bottom-logo-wrapper {
+    text-align: center;
+}
+
+.bottom-logo {
+    content: url("../images/logo/logo_dcd3c8_nobg_cut.png");
+    height: 20vh;
+    float: right;
+}
+
+.legal-info {
+    margin: auto;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.legal-info p {
+    align-content: center;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.legal-info a {
+    color: #DCD3C8;
+    text-decoration: none;
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.legal-info a:visited {
+    color: #DCD3C8;
+}
+
+.contacts-link {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.f-logo {
+    height: 29px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dev-info {
+    text-align: center;
+    position: relative
+}
+
+@media (max-aspect-ratio: 3/4), (min-resolution: 300dpi) and (orientation: portrait){
+    .company-info {
+        width: 100%;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .dev-info {
+        position: relative;
+        width: 100%;
+        flex: 1;
+    }
+    
+    .bottom-logo-wrapper {
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .bottom-logo {
+        content: url("../images/logo/logo_dcd3c8_nobg_cut.png");
+        height: 20vh;
+    }
+    
+    .legal-info {
+        position: relative;
+        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+    
+    .legal-info p {
+        align-content: center;
+        margin: 0;
+        float: center;
+        flex: 1;
+    }
+    
+    .space {
+        flex: 1;
+    }
+    
+    .legal-info a {
+        color: #DCD3C8;
+        text-decoration: none;
+        vertical-align: middle;
+        margin: auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .legal-info a:visited {
+        color: #DCD3C8;
+    }
+}

@@ -1,181 +1,5 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-body {
-    overflow: overlay;
-    font-family: "Playfair Display";
-    background-color: #DCD3C8;
-    color: #42321e;
-}
-
 .main-banner {
-    position: relative;
-    height: 50vh;
-    width: 100vw;
     background-image: url("../images/history/history_bg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom: 4px solid #b4aca2;
-}
-
-.top-bar {
-    background-color: #dcd3c8;
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 7vh;
-    border-bottom: 4px solid #b4aca2;
-}
-
-.top-bar a {
-    float: left;
-    color: #42321e;
-    text-align: center;
-    text-decoration: none;
-}
-
-.top-logo{
-    content: url("../images/logo/logo_42321e_nobg_nowr.png");
-    position: absolute;
-    height: 80%;
-    top:50%;
-    transform: translate(0, -50%);
-}
-
-.top-bar-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    right: 1%;
-    transform: translate(0, -50%);
-}
-
-.top-bar-right a {
-    padding: 15px;
-}
-.top-bar-right a.language {
-    padding: 8px;
-}
-
-.top-bar-right h1 {
-    font-size: max(min(1.5vw, 25px), 18px);
-    margin: 0 0;
-}
-
-.language {
-    border: 2px solid transparent;
-    border-radius: 5px;
-}
-
-.language:visited {
-    color: #42321e;
-}
-
-.language:hover {
-    border-color: #42321e;
-    animation: fadeInBorder .5s;
-    -webkit-animation: fadeInBorder .5s;
-}
-@keyframes fadeInBorder {
-    0% {border: 2px solid transparent;}
-    100% {border: 2px solid #42321e;}
-}
-@-webkit-keyframes fadeInBorder {
-    0% {border: 2px solid transparent;}
-    100% {border: 2px solid #42321e;}
-}
-.language:not(:hover) {
-    border-color: transparent;
-    animation: fadeOutBorder 1s;
-    -webkit-animation: fadeOutBorder 1s;
-}
-@keyframes fadeOutBorder {
-    0% {border: 2px solid #42321e;}
-    100% {border: 2px solid transparent;}
-}
-@-webkit-keyframes fadeOutBorder {
-    0% {border: 2px solid #42321e;}
-    100% {border: 2px solid transparent;}
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.hamburger {
-    cursor: pointer;
-    width: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.bar {
-    width: 5px;
-    height: 5px;
-    margin: 3px 0;
-    background-color: #42321e;
-}
-
-.hamburger:hover > .bar {
-    width: 35px;
-    animation: enlarge .5s;
-    -webkit-animation: enlarge .5s;
-}
-@keyframes enlarge {
-    0% {width: 5px;}
-    100% {width: 35px;}
-}
-@-webkit-keyframes enlarge {
-    0% {width: 5px;}
-    100% {width: 35px;}
-}
-.hamburger:not(:hover) > .bar {
-    width: 5px;
-    animation: reduce 1s;
-    -webkit-animation: reduce 1s;
-}
-@keyframes reduce {
-    0% {width: 35px;}
-    100% {width: 5px;}
-}
-@-webkit-keyframes reduce {
-    0% {width: 35px;}
-    100% {width: 5px;}
-}
-
-.container {
-    position: relative;
-    width: 80%;
-    max-width: 1400px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: block;
-}
-
-.claim {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: max(min(3.5vw, 50px), 35px);
-    color: #42321e;
-    background-color: rgba(220, 211, 200, .8);
-    padding-right: 5px;
-    padding-left: 5px;
 }
 
 .section {
@@ -183,13 +7,6 @@ body {
     flex-direction: row;
     padding: 20px;
     gap: 20px;
-}
-
-.divider {
-    border-top: 2px solid #a8a8a8;
-    border-radius: 2px;
-    width: 50%;
-    max-width: 500px;
 }
 
 .image {
@@ -323,7 +140,6 @@ body {
     color: #dcd3c8;
     font-weight: bold;
     font-size: 20px;
-    border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
     background-color: rgba(0, 0, 0, 0.4);
@@ -332,6 +148,11 @@ body {
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
 }
 
 .prev:hover, .next:hover {
@@ -377,129 +198,7 @@ body {
     transition: .5s;
 }
 
-.bottom-banner {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #42321e;
-    border-top: 4px solid #b4aca2;
-    color: #DCD3C8;
-    font-family: "Open sans";
-}
-
-.company-info {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.dev-info {
-    position: relative;
-    width: 100%;
-    flex: 1;
-    font-size: 14px;
-}
-
-.bottom-logo-wrapper {
-    text-align: center;
-}
-
-.bottom-logo {
-    content: url("../images/logo/logo_dcd3c8_nobg_cut.png");
-    height: 20vh;
-    float: right;
-}
-
-.legal-info {
-    margin: auto;
-    vertical-align: middle;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.legal-info p {
-    text-align: center;
-    align-content: center;
-    margin: 0;
-    flex: 1;
-}
-
-.legal-info a {
-    color: #DCD3C8;
-    text-decoration: none;
-    margin: auto;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.legal-info a:visited {
-    color: #DCD3C8;
-}
-
-.contacts-link {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.f-logo {
-    height: 20px;
-}
-
-.dev-info {
-    text-align: center;
-    position: relative
-}
-
 @media (max-aspect-ratio: 3/4), (min-resolution: 300dpi) and (orientation: portrait){
-    .top-bar-right {
-        right: 2%;
-    }
-
-    .top-bar a {
-        color: #42321e;
-    }
-
-    .language h1 {
-        color: #42321e;
-    }
-
-    .bar {
-        background-color: #42321e;
-        width: 35px;
-    }
-    .hamburger:hover > .bar {
-        width: 35px;
-        animation: none;
-        -webkit-animation: none;
-        -moz-animation: none;
-        -o-animation: none;
-        -ms-animation: none;
-    }
-    .hamburger:not(:hover) > .bar {
-        width: 35px;
-        animation: none;
-        -webkit-animation: none;
-        -moz-animation: none;
-        -o-animation: none;
-        -ms-animation: none;
-    }
-
-    .container {
-        width: 100%;
-        max-width: none;
-        left: 0;
-        transform: none;
-        display: block;
-    }
-    
     .section {
         padding: 10px;
         justify-content: center;
@@ -598,78 +297,4 @@ body {
         border: 2px solid #42321e;
         height: 10%;
     }
-
-    .company-info {
-        width: 100%;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-    }
-    
-    .dev-info {
-        position: relative;
-        width: 100%;
-        flex: 1;
-    }
-    
-    .bottom-logo-wrapper {
-        flex: 1;
-        justify-content: center;
-    }
-    
-    .bottom-logo {
-        content: url("../images/logo/logo_dcd3c8_nobg_cut.png");
-        height: 20vh;
-    }
-    
-    .legal-info {
-        position: relative;
-        height: 100%;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 0;
-    }
-    
-    .legal-info p {
-        align-content: center;
-        margin: 0;
-        float: center;
-        flex: 1;
-    }
-    
-    .space {
-        flex: 1;
-    }
-    
-    .legal-info a {
-        color: #DCD3C8;
-        text-decoration: none;
-        vertical-align: middle;
-        margin: auto;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    .legal-info a:visited {
-        color: #DCD3C8;
-    }
-}
-
-
-/* Scroll bar personalization */
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0);
-}
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, .6); 
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, .85);
 }

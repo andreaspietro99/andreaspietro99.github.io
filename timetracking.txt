@@ -30,4 +30,4 @@
 15.00-18.30: REALIZZAZIONE: contactpage in italiano, inglese e tedesco in versione mobile e desktop con relativi link
 
 02/08
-09.00-
+09.00-12.00: REALIZZAZIONE: ridesign dello slideshow in history; ottimizzazioni di banda tramite riduzione del codice di stile ridondante; correzione di errori nei contatti come da segnalazione
