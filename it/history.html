@@ -33,35 +33,10 @@
                 "Le nocciole esposte al sole per perdere umidità",
                 "Andreas al lavoro nei campi"
             );
-
-            function prev() {
-                iSlide = (iSlide-1) % 10;
-                showSlide(iSlide);
-            }
-
-            function next() {
-                iSlide = (iSlide+1) % 10;
-                showSlide(iSlide);
-            }
-
-            function showSlide(n) {
-                var i;
-                var slides = document.getElementsByClassName("slide");
-                var previews = document.getElementsByClassName("preview");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < previews.length; i++) {
-                    previews[i].className = previews[i].className.replace(" active", "");
-                }
-                slides[n].style.display = "block";
-                previews[n].className += " active";
-                var captionWrapper = document.getElementById("slide-caption");
-                captionWrapper.innerHTML = captions[iSlide];
-            }
         </script>
+        <script src="../scripts/slideshow.js"></script>
     </head>
-    <body onload="showSlide(iSlide);">
+    <body onload="showSlide(0);">
         <div class="main-banner">
             <p class="claim">LA NOSTRA STORIA</p>
             <div class="top-bar">
@@ -154,7 +129,6 @@
                     </p>
                 </div>
             </div>
-            <hr class="divider">
             <div class="slideshow">
                 <a class="prev" onclick="prev()">&#10094;</a>
                 <a class="next" onclick="next()">&#10095;</a>
@@ -193,39 +167,6 @@
                 <div class="slide-caption-container">
                     <p id="slide-caption"></p>
                 </div>
-
-                <div class="thumbnails">
-                    <div class="thumbnail">
-                        <img class="preview" onclick="showSlide(0)" src="../images/history/slide/foto1.jpg" style="width:100%">
-                    </div>
-                    <div class="thumbnail">
-                        <img class="preview" onclick="showSlide(1)" src="../images/history/slide/foto2.jpg" style="width:100%">
-                    </div>
-                    <div class="thumbnail">
-                        <img class="preview" onclick="showSlide(2)" src="../images/history/slide/foto3.jpg" style="width:100%">
-                    </div>
-                    <div class="thumbnail">
-                        <img class="preview" onclick="showSlide(3)" src="../images/history/slide/foto4.jpg" style="width:100%">
-                    </div>
-                    <div class="thumbnail">
-                        <img class="preview" onclick="showSlide(4)" src="../images/history/slide/foto5.jpg" style="width:100%">
-                    </div>
-                    <div class="thumbnail">
-                        <img class="preview" onclick="showSlide(5)" src="../images/history/slide/foto6.jpg" style="width:100%">
-                    </div>
-                    <div class="thumbnail">
-                        <img class="preview" onclick="showSlide(6)" src="../images/history/slide/foto7.jpg" style="width:100%">
-                    </div>
-                    <div class="thumbnail">
-                        <img class="preview" onclick="showSlide(7)" src="../images/history/slide/foto8.jpg" style="width:100%">
-                    </div>
-                    <div class="thumbnail">
-                        <img class="preview" onclick="showSlide(8)" src="../images/history/slide/foto9.jpg" style="width:100%">
-                    </div>
-                    <div class="thumbnail">
-                        <img class="preview" onclick="showSlide(9)" src="../images/history/slide/foto10.jpg" style="width:100%">
-                    </div>
-                </div>
             </div>
         </div>
         <div class="bottom-banner">
@@ -236,12 +177,12 @@
                 <div class="legal-info">
                     <p>Azienda agricola Andreas Morra | P.iva 03815860048</p>
                     <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
-                    <p><a href="tel:+393279947784">Tel.: +39-3279947784</a> | Rif. comm.: <a href="tel:+3933316015454">+39-33316015454</a></p>
+                    <p><a href="tel:+393279947784">Tel.: +39-3279947784</a> | <a href="tel:+393331601545">Rif. comm.: +39-3331601545</a></p>
                     <p class="contacts-link"><a class="mail" href="mailto:a.agricolamorra@gmail.com">e-mail: a.agricolamorra@gmail.com</a> | Social: <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="f-logo" src="../images/social/f_logo_RGB-Blue_512.png" style="height: 29px;"></a> | <a href="#"><img class="f-logo" src="../images/social/Instagram_Glyph_Gradient_RGB.png" style="height: 29px;"></a></p>
                 </div>
             </div>
             <div class="dev-info">
-                <p>Realizzato da Pietro Cagnasso | Fotografie di Giacomo Gatto</p>
+                <p>Sviluppato da Pietro Cagnasso | Fotografie di Giacomo Gatto</p>
             </div>
         </div>
     </body>

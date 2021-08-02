@@ -16,26 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-        <script language="javascript">
-            var msgIndex = 1;
-            var msgs = new Array(
-                "SCEGLI UNA LINGUA",
-                "CHOOSE A LANGUAGE",
-                "EINE SPRACHE WÄHLEN"
-            );
-
-            function changeMessage(milliseconds) {
-                if (msgIndex >= msgs.length) {
-                    msgIndex = 0;
-                }
-                if (document.getElementById != null) {
-                    var heading = document.getElementById("header-language-selector");
-                    heading.firstChild.nodeValue = msgs[msgIndex];
-                }
-                msgIndex++;
-                window.setTimeout(function(){changeMessage(milliseconds);}, milliseconds);
-            }
-        </script>
+        <script src="./scripts/index.js"></script>
     </head>
     <body onload="window.setTimeout(function(){changeMessage(3000);}, 3000);">
         <img id="logo" src="./images/logo/logo_42321e_nobg.png">

@@ -36,7 +36,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: max(min(3.5vw, 50px), 30px);
+    font-size: max(min(3.5vw, 50px), 35px);
     margin: 0;
     padding-left: 5px;
     padding-right: 5px;
@@ -201,6 +201,7 @@ body {
     flex-direction: column;
     gap: 20px;
     font-family: "Open sans";
+    margin-bottom: 20px;
 }
 
 .info p {
