@@ -13,8 +13,8 @@
     position: absolute;
     height: auto;
     width: auto;
-    max-height: 70vh;
-    max-width: 60vw;
+    max-height: 60vh;
+    max-width: 50vw;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -209,6 +209,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .text {
@@ -228,6 +229,10 @@
 
 .right {
     text-align: right;
+}
+
+.left {
+    text-align: left;
 }
 
 .redirect {
@@ -288,6 +293,11 @@
         margin-bottom: 25px;
     }
 
+    .logo {
+        max-height: 60vh;
+        max-width: 80vw;
+    }
+
     .top-logo{
         content: url("../images/logo/logo_42321e_nobg_nowr.png");
         position: absolute;
@@ -327,6 +337,10 @@
         -moz-animation: none;
         -o-animation: none;
         -ms-animation: none;
+    }
+
+    .main-banner {
+        background-image: url("../images/homepage/homepage_bg-mobile.jpg");
     }
     
     .section {
