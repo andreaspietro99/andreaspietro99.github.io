@@ -31,3 +31,6 @@
 
 02/08
 09.00-12.00: REALIZZAZIONE: ridesign dello slideshow in history; ottimizzazioni di banda tramite riduzione del codice di stile ridondante; correzione di errori nei contatti come da segnalazione
+
+03/08
+10.00-12.30: REALIZZAZIONE: ridesign pagina prodotti; simulazione pagina per il singolo prodotto in italiano versione desktop e mobbile
