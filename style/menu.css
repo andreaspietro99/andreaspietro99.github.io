@@ -1,0 +1,66 @@
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #dcd3c8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.menu-logo {
+    height: 50vh;
+}
+
+.overlay a {
+    cursor: pointer;
+    padding: 8px;
+    text-decoration: none;
+    font-size: max(min(3.5vw, 45px), 30px);
+    color: #42321e;
+    display: block;
+    margin: auto;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+@media (max-aspect-ratio: 3/4),
+(min-resolution: 300dpi) and (orientation: portrait) {
+    .overlay-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-logo {
+        width: 80vw;
+        height: auto;
+        margin: auto;
+    }
+}
