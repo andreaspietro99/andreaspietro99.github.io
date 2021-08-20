@@ -1,0 +1,103 @@
+#photo-banner {
+    background-image: url('../images/homepage/home-and-fields.jpg');
+}
+
+#logo {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 512px;
+    transition: 0.5s;
+}
+
+.icon {
+    margin: auto;
+    flex: 2;
+    padding: 10px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.description {
+    margin: auto;
+    flex: 3;
+    padding: 10px;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    font-family: 'Playfair Display';
+    font-size: 30px;
+}
+
+.left .text {
+    text-align: right;
+}
+
+.right .text {
+    text-align: left;
+}
+
+.contacts .text {
+    text-align: center;
+}
+
+.redirect {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contacts .redirect {
+    width: 30%;
+}
+
+.redirect:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.redirect-text {
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+}
+
+@media (max-aspect-ratio: 3/4),
+(min-resolution: 300dpi) and (orientation: portrait) {
+    #photo-banner {
+        background-image: url('../images/homepage/home-and-fields-mobile.jpg');
+    }
+    #logo {
+        width: 75%;
+    }
+    .right {
+        flex-direction: column-reverse;
+    }
+    .left {
+        flex-direction: column;
+    }
+    .section .text {
+        text-align: center;
+    }
+    .redirect {
+        width: 90%;
+    }
+    .redirect-text {
+        font-size: 40px;
+    }
+    .contacts .redirect {
+        width: 90%;
+    }
+}
