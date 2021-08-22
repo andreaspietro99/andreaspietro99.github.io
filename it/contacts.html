@@ -1,104 +1,98 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 
 <head>
     <title>Contatti</title>
 
-    <!-- font da Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/contacts.css">
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/info-bar.css">
+    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="../style/top-bar.css">
+
+    <link rel="icon" href="../images/logo/logo-white-icon.png">
+
+    <!--font from Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="../images/logo/logo_tab.ico">
-    <link rel="stylesheet" href="../style/contacts.css">
-    <link rel="stylesheet" href="../style/general.css">
-    <link rel="stylesheet" href="../style/bottombar.css">
-    <link rel="stylesheet" href="../style/topbar.css">
-    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap">
 
     <script src="../scripts/menu.js"></script>
-
-    <meta name="description" content="Contatti">
-    <meta name="author" content="Pietro Cagnasso">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
-    <div id="my-nav" class="overlay">
-        <a class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <img class="menu-logo" src="../images/logo/logo_42321e_nobg.png">
-            <div class="content">
-                <a href="./homepage.html">Homepage</a>
-                <a href="./history.html">La nostra storia</a>
-                <a href="./products.html">I nostri prodotti</a>
-                <a href="./contacts.html">I nostri contatti</a>
+    <div id="menu-page">
+        <div id="close-btn" onclick="closeMenu()"><img id="close-img" src="../images/icons/close-black.png"></div>
+        <div id="menu-content">
+            <div id="menu-logo-container">
+                <img id="menu-logo" src="../images/logo/logo-black-no-words.png">
+            </div>
+            <div id="menu-voices">
+                <div class="menu-voice" onclick="location.href='./homepage.html';">
+                    <p class="voice-text">Homepage</p>
+                </div>
+                <div class="menu-voice" onclick="location.href='./history.html';">
+                    <p class="voice-text">La nostra storia</p>
+                </div>
+                <div class="menu-voice" onclick="location.href='./products.html';">
+                    <p class="voice-text">I nostri prodotti</p>
+                </div>
+                <div class="menu-voice" onclick="location.href='./contacts.html';">
+                    <p class="voice-text">I nostri contatti</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="main-banner">
-        <p class="claim">CONTATTI</p>
-        <div class="top-bar">
-            <a class="bring-home" href="./homepage.html"><img class="top-logo"></a>
-            <div class="top-bar-right">
-                <a class="language" href="../en/contacts.html">
-                    <h1>EN</h1>
-                </a>
-                <a class="language" href="../de/contacts.html">
-                    <h1>DE</h1>
-                </a>
-                <a class="menu" onclick="openNav()">
-                    <div class="hamburger">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                </a>
-            </div>
+    <div id="photo-banner">
+        <div id="menu" onclick="openMenu()"><img id="open-img" src="../images/icons/hamburger-white.png"></div>
+        <a id="home" href="./homepage.html"><img id="home-img" src="../images/logo/logo-white-no-words.png"></a>
+        <div class="lang-selector">
+            <div class="language"><img id="language-img" src="../images/icons/en-white.png"></div>
+            <div class="language"><img id="language-img" src="../images/icons/de-white.png"></div>
+        </div>
+        <div id="title-container">
+            <p id="title">I CONTATTI</p>
         </div>
     </div>
-    <div class="container">
-        <p class="call-to-action">Non esitate a contattarci, siamo a vostra disposizione</p>
-        <div class="info">
-            <p class="contacts-link">Telefono: <a href="tel:+393279947784">+39-3279947784</a></p>
-            <p class="contacts-link">Riferimento commerciale: <a href="tel:+393331601545">+39-3331601545</a></p>
-            <p class="contacts-link">e-mail: <a class="mail" href="mailto:a.agricolamorra@gmail.com">a.agricolamorra@gmail.com</a></p>
-            <br>
-            <p class="contacts-link">Social network:
-                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="f-logo" src="../images/social/f_logo_RGB-Blue_512.png" style="height: 50px;"></a> |
-                <a href="#"><img class="f-logo" src="../images/social/Instagram_Glyph_Gradient_RGB.png" style="height: 50px;"></a>
+    <div id="container">
+        <p id="claim">
+            Per qualsiasi informazione non esitate a contattarci, siamo a vostra disposizione!
+        </p>
+        <p id="large-contact-info">
+            Telefono: +39-3279947784<br> Riferimento commerciale: +39-3331601545<br> e-mail: a.agricolamorra@gmail.com<br><br>
+            <a><img class="social-icon" src="../images/social/f_logo_RGB-Blue_512.png" style="height: 40px; width: 40px;"></a>&nbsp;&nbsp;
+            <a><img class="social-icon" src="../images/social/Instagram_Glyph_Gradient_RGB.png" style="height: 40px; width: 40px;"></a>
+        </p>
+        <p id="claim">
+            Venite a trovarci!
+        </p>
+        <p id="large-contact-info">
+            Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181529.5181812538!2d7.8824673255874815!3d44.69105793627612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b93ff967b3d9%3A0x7d01b8abdeeafd82!2sAz.%20Agr.%20Morra%20Andreas!5e0!3m2!1sen!2sit!4v1629449668682!5m2!1sen!2sit"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <hr class="divider">
+    <div id="info">
+        <div id="info-logo-container"><img id="info-logo" src="../images/logo/logo-black.png"></div>
+        <div id="legal-info">
+            <p>Azienda agricola Andreas Morra | P. iva 03815860048</p>
+            <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
+        </div>
+        <div id="contact-info">
+            <p>Tel.: +39-3279947784 | Rif. comm.: +39-3331601545</p>
+            <p>e-mail: a.agricolamorra@gmail.com</p>
+            <p>
+                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" src="../images/social/f_logo_RGB-Blue_512.png"></a>&nbsp;&nbsp;
+                <a><img class="social-icon" src="../images/social/Instagram_Glyph_Gradient_RGB.png"></a>
             </p>
         </div>
-        <hr class="divider">
-        <p class="call-to-action">Venite a trovarci</p>
-        <div class="info">
-            <p class="contacts-link" style="margin-bottom: 20px;">Indirizzo: Via Monastero, 1, Località Quazzo, 12050 Serravalle Langhe CN</p>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45486.029401269494!2d8.022314179101564!3d44.55862510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2b93ff967b3d9%3A0x7d01b8abdeeafd82!2sAz.%20Agr.%20Morra%20Andreas!5e0!3m2!1sen!2sit!4v1627824898998!5m2!1sen!2sit"
-            width="80%" height="450" style="border:0; margin-bottom: 20px;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <div class="bottom-banner">
-        <div class="company-info">
-            <div class="bottom-logo-wrapper">
-                <img class="bottom-logo">
-            </div>
-            <div class="legal-info">
-                <p>Azienda agricola Andreas Morra | P.iva 03815860048</p>
-                <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
-                <p><a href="tel:+393279947784">Tel.: +39-3279947784</a> | <a href="tel:+393331601545">Rif. comm.: +39-3331601545</a></p>
-                <p class="contacts-link"><a class="mail" href="mailto:a.agricolamorra@gmail.com">e-mail: a.agricolamorra@gmail.com</a> | Social:
-                    <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="f-logo" src="../images/social/f_logo_RGB-Blue_512.png" style="height: 29px;"></a> |
-                    <a href="#"><img class="f-logo" src="../images/social/Instagram_Glyph_Gradient_RGB.png" style="height: 29px;"></a>
-                </p>
-            </div>
-        </div>
-        <div class="dev-info">
-            <p>Sviluppato da Pietro Cagnasso | Fotografie di Giacomo Gatto</p>
-        </div>
+    <div id="dev-info">
+        <p>Copyright 2021 - Tutti i diritti riservati | Realizzato da Pietro Cagnasso | Foto di Giacomo Gatto</p>
     </div>
 </body>
 

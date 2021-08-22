@@ -1,59 +1,101 @@
-html, body {
+:root {
+    /* --beige: #E9D3C0; */
+    --grey: #DADADA;
+}
+
+html,
+body {
     margin: 0;
     padding: 0;
-    border: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Open sans';
 }
 
 body {
+    background-color: var(--grey);
     overflow: overlay;
-    font-family: "Playfair Display";
-    background-color: #DCD3C8;
 }
 
-.container {
+#photo-banner {
     position: relative;
-    width: 70%;
-    max-width: 1400px;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    position: relative;
+    width: 80%;
     left: 50%;
     transform: translate(-50%, 0);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section-divider {
+    display: none;
+    border-top: 2px solid black;
+    border-radius: 2px;
+    width: 90%;
+}
+
+#claim {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 35px;
     text-align: center;
+    margin: 10px 0;
+}
+
+#title {
+    position: absolute;
+    width: 100%;
+    font-family: 'Playfair Dispaly';
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    bottom: 5%;
+    color: white;
 }
 
 .divider {
-    border-top: 2px solid #a8a8a8;
+    border-top: 2px solid black;
     border-radius: 2px;
-    width: 50%;
-    max-width: 500px;
+    width: 60%;
 }
 
-@media (max-aspect-ratio: 3/4), (min-resolution: 300dpi) and (orientation: portrait){
-    .container {
-        width: 100vw;
-        max-width: none;
-        left: 0;
-        transform: none;
-        display: block;
-    }
-
-    .divider {
-        width: 50%;
-        max-width: 500px;
-    }
-}
-
-/* Scroll bar personalization */
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0);
 }
+
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, .6); 
+    background: rgba(0, 0, 0, .5);
     border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, .85);
+    background: rgba(0, 0, 0, .88);
+}
+
+@media (max-aspect-ratio: 3/4),
+(min-resolution: 300dpi) and (orientation: portrait) {
+    #container {
+        width: 95%;
+    }
+    #claim {
+        font-size: 50px;
+    }
+    .text {
+        font-size: 45px;
+    }
 }

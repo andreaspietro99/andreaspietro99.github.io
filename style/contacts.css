@@ -1,91 +1,95 @@
-.main-banner {
-    background-image: url("../images/contacts/contacts_bg.jpg");
+#photo-banner {
+    background-image: url('../images/contacts/home-from-fields.jpg');
 }
 
-.call-to-action {
-    text-align: center;
-    font-size: max(min(3.5vw, 30px), 22px);
-    margin: max(min(3.5vw, 20px), 15px);
-}
-
-.info {
-    width: 96%;
-    margin: auto;
-    vertical-align: middle;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    gap: 20px;
-    font-family: "Open sans";
-    margin-bottom: 20px;
-}
-
-.info p {
-    align-content: center;
+#title {
+    position: absolute;
+    width: 100%;
+    font-family: 'Playfair Dispaly';
+    font-size: 50px;
     margin: 0;
-    flex: 1;
     text-align: center;
-    font-size: max(min(2.5vw, 22px), 18px);
+    bottom: 5%;
+    color: white;
 }
 
-.info a {
-    color: #42321e;
-    text-decoration: none;
-    margin: auto;
+#large-contact-info {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
 }
 
-.info a:visited {
-    color: #42321e;
-}
-
-@media (max-aspect-ratio: 3/4), (min-resolution: 300dpi) and (orientation: portrait){
-    .section {
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
+@media (max-aspect-ratio: 3/4),
+(min-resolution: 300dpi) and (orientation: portrait) {
+    #photo-banner {
+        background-image: url('../images/contacts/home-from-fields-mobile.jpg');
+    }
+    #title {
+        position: absolute;
+        width: 100%;
+        font-family: 'Playfair Dispaly';
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+        bottom: 5%;
+        color: white;
+    }
+    #title {
+        font-size: 75px;
+    }
+    .right .description h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .left .description h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .right {
+        flex-direction: column;
+    }
+    .left {
         flex-direction: column-reverse;
     }
-
-    .left {
-        display: flex;
-        flex-direction: column;
-    }
-        
-    .photo {
-        width: 90%;
-        max-height: none;
-    }
-    
-    .description {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .redirect {
+    .section .text {
         text-align: center;
-        font-size: max(min(1.5vw, 25px), 18px);
-        border: 2px solid #42321e;
-        border-radius: 5px;
-        padding: 8px;
-    } 
-    .redirect:visited {
-        color: #42321e;
     }
-    .redirect:hover {
-        border: 2px solid #42321e;
-        animation: none;
-        -webkit-animation: none;
+    #nineties {
+        max-height: none;
+        width: 100%;
     }
-    .redirect:not(:hover) {
+    .slideshow {
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        position: relative;
+        bottom: 20px;
+        height: 60vh;
+    }
+    .slide {
+        display: none;
+        height: 90%;
+        margin-bottom: 5px;
+    }
+    .slide img {
+        width: auto;
+        height: 100%;
+        object-fit: scale-down;
+    }
+    .slide-caption-container {
+        text-align: center;
+        padding: 2px 16px;
         border: 2px solid #42321e;
-        animation: none;
-        -webkit-animation: none;
+        height: auto;
+    }
+    .prev,
+    .next {
+        width: 30px;
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+    }
+    p#slide-caption {
+        font-size: 35px;
     }
 }
-

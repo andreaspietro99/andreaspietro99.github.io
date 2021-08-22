@@ -2,13 +2,15 @@
 <html>
 
 <head>
-    <title>Nocciole tostate</title>
+    <title>Crema gianduia</title>
 
-    <link rel="stylesheet" href="./style/product.css">
-    <link rel="stylesheet" href="./style/general.css">
-    <link rel="stylesheet" href="./style/info-bar.css">
-    <link rel="stylesheet" href="./style/menu.css">
-    <link rel="stylesheet" href="./style/top-bar.css">
+    <link rel="stylesheet" href="../style/product.css">
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/info-bar.css">
+    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="../style/top-bar.css">
+
+    <link rel="icon" href="../images/logo/logo-white-icon.png">
 
     <!--font from Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,28 +19,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap">
-    <script>
-        function openMenu() {
-            document.getElementById("menu-page").style.height = "100vh";
-            document.body.style.overflow = 'hidden';
-        }
 
-        function closeMenu() {
-            document.getElementById("menu-page").style.height = "0";
-            document.body.style.overflow = 'overlay';
-        }
-    </script>
+    <script src="../scripts/menu.js"></script>
 </head>
 
 <body>
     <div id="menu-page">
-        <div id="close-btn" onclick="closeMenu()"><img id="close-img" src="./images/icons/close-black.png"></div>
+        <div id="close-btn" onclick="closeMenu()"><img id="close-img" src="../images/icons/close-black.png"></div>
         <div id="menu-content">
             <div id="menu-logo-container">
-                <img id="menu-logo" src="./images/logo/logo-black-no-words.png">
+                <img id="menu-logo" src="../images/logo/logo-black-no-words.png">
             </div>
             <div id="menu-voices">
-                <div class="menu-voice" onclick="location.href='./index.html';">
+                <div class="menu-voice" onclick="location.href='./homepage.html';">
                     <p class="voice-text">Homepage</p>
                 </div>
                 <div class="menu-voice" onclick="location.href='./history.html';">
@@ -54,33 +47,33 @@
         </div>
     </div>
     <div id="photo-banner">
-        <div id="menu" onclick="openMenu()"><img id="open-img" src="./images/icons/hamburger-white.png"></div>
-        <a id="home" href="./index.html"><img id="home-img" src="./images/logo/logo-white-no-words.png"></a>
+        <div id="menu" onclick="openMenu()"><img id="open-img" src="../images/icons/hamburger-white.png"></div>
+        <a id="home" href="./homepage.html"><img id="home-img" src="../images/logo/logo-white-no-words.png"></a>
         <div class="lang-selector">
-            <div class="language"><img id="language-img" src="./images/icons/en-white.png"></div>
-            <div class="language"><img id="language-img" src="./images/icons/de-white.png"></div>
+            <div class="language"><img id="language-img" src="../images/icons/en-white.png"></div>
+            <div class="language"><img id="language-img" src="../images/icons/de-white.png"></div>
         </div>
         <div id="title-container">
-            <p id="title">NOCCIOLE TOSTATE</p>
+            <p id="title">CREMA GIANDUIA</p>
         </div>
     </div>
     <div id="container">
         <div id="content">
             <div id="image">
-                <img id="photo" src="./images/products/tostate.jpg">
+                <img id="photo" src="../images/products/crema.jpg">
             </div>
             <div id="description">
                 <p>
-                    "Nocciola Piemonte IGP" delle Langhe selezionata, della stessa calibratura e posta sottovuoto appena tostata per mantenere l'aroma e il gusto tipici del territorio.<br><br> INGREDIENTI:
-                    <br> 100% "Nocciola Piemonte IGP" delle Langhe.<br><br> FORMATI:
-                    <br> Confezione sottovuoto da <b>1 kg</b><br> COnfezione sottovuoto da <b>200 g</b>
+                    Squisita crema spalmabile della tradizione pemontese, di altissima qualità e dal gusto inconfondibile con elevato contenuto di "Nocciola Piemonte IGP" delle Langhe.<br> PRODOTTO SENZA GLUTINE.<br><br> INGREDIENTI:
+                    <br> 51% "Nocciola Piemonte IGP" delle Langhe, saccarosio fibra vegetale (inulina), cacao in polvere 22/24, latte magro in polvere. Emulsionante: lecitina di soia.<br><br> FORMATI:
+                    <br> Vasetto da <b>200 g</b>
                 </p>
             </div>
         </div>
     </div>
     <hr class="divider">
     <div id="info">
-        <div id="info-logo-container"><img id="info-logo" src="./images/logo/logo-black.png"></div>
+        <div id="info-logo-container"><img id="info-logo" src="../images/logo/logo-black.png"></div>
         <div id="legal-info">
             <p>Azienda agricola Andreas Morra | P. iva 03815860048</p>
             <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
@@ -89,8 +82,8 @@
             <p>Tel.: +39-3279947784 | Rif. comm.: +39-3331601545</p>
             <p>e-mail: a.agricolamorra@gmail.com</p>
             <p>
-                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" src="./images/social/f_logo_RGB-Blue_512.png"></a>&nbsp;&nbsp;
-                <a><img class="social-icon" src="./images/social/Instagram_Glyph_Gradient_RGB.png"></a>
+                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" src="../images/social/f_logo_RGB-Blue_512.png"></a>&nbsp;&nbsp;
+                <a><img class="social-icon" src="../images/social/Instagram_Glyph_Gradient_RGB.png"></a>
             </p>
         </div>
     </div>

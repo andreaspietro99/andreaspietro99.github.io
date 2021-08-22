@@ -1,7 +1,9 @@
-function openNav() {
-    document.getElementById("my-nav").style.height = "100%";
+function openMenu() {
+    document.getElementById("menu-page").style.height = "100vh";
+    document.body.style.overflow = 'hidden';
 }
 
-function closeNav() {
-    document.getElementById("my-nav").style.height = "0%";
+function closeMenu() {
+    document.getElementById("menu-page").style.height = "0";
+    document.body.style.overflow = 'overlay';
 }

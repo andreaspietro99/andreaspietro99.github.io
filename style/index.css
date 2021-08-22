@@ -1,61 +1,16 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    height: 100vh;
-    width: 100vw;
-}
-
-body {
-    overflow: overlay;
-    font-family: "Playfair Display";
-    color: #42321E;
-    background-color: #DCD3C8;
-    height: 100vh;
-    width: 100vw;
-}
-
 #logo {
     position: absolute;
-    height: auto;
-    width: auto;
-    max-height: 70vh;
-    max-width: 60vw;
+    width: 512px;
+    height: ayto;
     left: 50%;
     top: 35%;
     transform: translate(-50%, -50%);
-
-    animation: fadeIn 2s;
-    -webkit-animation: fadeIn 2s;
-    -moz-animation: fadeIn 2s;
-    -o-animation: fadeIn 2s;
-    -ms-animation: fadeIn 2s;
-}
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-@-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-@-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-@-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-@-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
 }
 
 #language-selector {
     position: absolute;
     height: 8vh;
-    width: 40%;
+    width: 50%;
     margin-left: 50%;
     transform: translate(-50%, 0);
     bottom: 25px;
@@ -67,6 +22,7 @@ body {
     font-size: max(min(1.5vw, 25px), 18px);
     margin: 0;
     text-align: center;
+    font-family: 'Playfair Display';
 }
 
 #languages {
@@ -77,7 +33,7 @@ body {
 }
 
 .language {
-    flex: 1; 
+    flex: 1;
     float: left;
     border: 2px solid transparent;
     border-radius: 8px;
@@ -85,75 +41,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #42321E;
+    color: black;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .language p {
     flex: 0 0;
     margin: 0;
+    font-size: 22px;
+    font-family: 'Open Sans';
 }
 
 .language:hover {
-    border-color: #42321E;
-    animation: fadeInBorder .5s;
-    -webkit-animation: fadeInBorder .5s;
-    -moz-animation: fadeInBorder .5s;
-    -o-animation: fadeInBorder .5s;
-    -ms-animation: fadeInBorder .5s;
-}
-@keyframes fadeInBorder {
-    0% {border: 2px solid transparent;}
-    100% {border: 2px solid #42321E;}
-}
-@-moz-keyframes fadeInBorder {
-    0% {border: 2px solid transparent;}
-    100% {border: 2px solid #42321E;}
-}
-@-webkit-keyframes fadeInBorder {
-    0% {border: 2px solid transparent;}
-    100% {border: 2px solid #42321E;}
-}
-@-o-keyframes fadeInBorder {
-    0% {border: 2px solid transparent;}
-    100% {border: 2px solid #42321E;}
-}
-@-ms-keyframes fadeInBorder {
-    0% {border: 2px solid transparent;}
-    100% {border: 2px solid #42321E;}
-}
-
-.language:not(:hover) {
-    border-color: transparent;
-    animation: fadeOutBorder .5s;
-    -webkit-animation: fadeOutBorder .5s;
-    -moz-animation: fadeOutBorder .5s;
-    -o-animation: fadeOutBorder .5s;
-    -ms-animation: fadeOutBorder .5s;
-}
-@keyframes fadeOutBorder {
-    0% {border: 2px solid #42321E;}
-    100% {border: 2px solid transparent;}
-}
-@-moz-keyframes fadeOutBorder {
-    0% {border: 2px solid #42321E;}
-    100% {border: 2px solid transparent;}
-}
-@-webkit-keyframes fadeOutBorder {
-    0% {border: 2px solid #42321E;}
-    100% {border: 2px solid transparent;}
-}
-@-o-keyframes fadeOutBorder {
-    0% {border: 2px solid #42321E;}
-    100% {border: 2px solid transparent;}
-}
-@-ms-keyframes fadeOutBorder {
-    0% {border: 2px solid #42321E;}
-    100% {border: 2px solid transparent;}
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .language:visited {
-    color: #42321E;
+    color: black;
 }
 
 .flag {
@@ -161,7 +66,8 @@ body {
     width: auto;
 }
 
-@media (max-aspect-ratio: 3/4), (min-resolution: 300dpi) and (orientation: portrait){
+@media (max-aspect-ratio: 3/4),
+(min-resolution: 300dpi) and (orientation: portrait) {
     #logo {
         height: auto;
         width: auto;
@@ -182,7 +88,7 @@ body {
     #header-language-selector {
         height: 5vh;
         min-height: 20px;
-        font-size: max(min(1.5vw, 25px), 18px);
+        font-size: 24px;
         margin: 0;
         text-align: center;
     }
@@ -193,30 +99,14 @@ body {
         flex-flow: column;
     }
     .language {
-        flex: 1; 
+        flex: 1;
         float: left;
         border: 2px solid transparent;
         border-radius: 8px;
-        font-size: max(min(1.5vw, 25px), 18px);
+        font-size: 22px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid #42321E;
         margin: 2px;
     }
-}
-
-/* Scroll bar personalization */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0);
-}
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, .6); 
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, .85);
 }

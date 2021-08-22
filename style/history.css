@@ -1,107 +1,66 @@
-.main-banner {
-    background-image: url("../images/history/history_bg.jpg");
+#photo-banner {
+    background-image: url('../images/history/home-and-village-bw.jpg');
+}
+
+#title {
+    position: absolute;
+    width: 100%;
+    font-family: 'Playfair Dispaly';
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    bottom: 5%;
+    color: white;
+}
+
+.icon {
+    margin: auto;
+    text-align: center;
+    flex: 2;
+    padding: 10px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.icon p {
+    font-family: 'Playfair Display';
+}
+
+#nineties {
+    max-height: 500px;
+    width: auto;
+}
+
+.description {
+    margin: auto;
+    flex: 3;
+    padding: 10px;
 }
 
 .section {
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    gap: 20px;
 }
 
-.image {
-    display: flex;
-    flex-direction: column;
+.description h1 {
+    font-family: 'Playfair Display';
+    font-size: 30px;
 }
 
-.caption {
-    margin: 4px;
-    text-align: center;
+.right .description h1 {
+    text-align: left;
 }
 
-.trenta {
-    width: 35vw;
-    height: auto;
+.left .description h1 {
+    text-align: right;
 }
 
-.bisnonni {
-    width: 35vw;
-    height: auto;
-}
-
-.nonno {
-    height: 60vh;
-    width: auto;
-}
-
-.photo {
-    max-height: 35vh;
-    margin: auto;
-}
-
-.description {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.description p {
     text-align: justify;
-    margin: auto;
-}
-
-.text {
-    font-family: "Open sans";
-    font-weight: 500;
-    letter-spacing: 0px;
-    font-size: max(min(2.5vw, 22px), 18px);
-    margin: 8px;
-}
-
-.title p {
-    font-size: max(min(3.5vw, 30px), 22px);
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    text-align: center;
-}
-
-.redirect {
-    text-align: center;
-    font-size: max(min(1.5vw, 25px), 18px);
-    border: 2px solid transparent;
-    border-radius: 5px;
-    padding: 8px;
-}
-
-.redirect:visited {
-    color: #42321e;
-}
-
-.redirect:hover {
-    border-color: #42321e;
-    animation: fadeInBorderB .5s;
-    -webkit-animation: fadeInBorderB .5s;
-}
-@keyframes fadeInBorderB {
-    0% {border: 2px solid transparent;}
-    100% {border: 2px solid #42321e;}
-}
-@-webkit-keyframes fadeInBorderB {
-    0% {border: 2px solid transparent;}
-    100% {border: 2px solid #42321e;}
-}
-.redirect:not(:hover) {
-    border-color: transparent;
-    animation: fadeOutBorderB 1s;
-    -webkit-animation: fadeOutBorderB 1s;
-}
-@keyframes fadeOutBorderB {
-    0% {border: 2px solid #42321e;}
-    100% {border: 2px solid transparent;}
-}
-@-webkit-keyframes fadeOutBorderB {
-    0% {border: 2px solid #42321e;}
-    100% {border: 2px solid transparent;}
+    font-size: 22px;
+    font-weight: 300;
 }
 
 .slideshow {
@@ -117,7 +76,7 @@
     display: none;
     height: 95%;
     margin-bottom: 5px;
-    background-color:rgba(66, 50, 30, .6);
+    background-color: rgba(66, 50, 30, .6);
 }
 
 .slide img {
@@ -130,7 +89,8 @@
     cursor: pointer;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 47.5%;
@@ -155,7 +115,8 @@
     border-radius: 0 3px 3px 0;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     vertical-align: middle;
 }
@@ -169,6 +130,7 @@
 #slide-caption {
     color: #42321e;
     margin: auto;
+    font-family: 'Playfair Display';
 }
 
 .thumbnails:after {
@@ -193,108 +155,77 @@
     opacity: 0.4;
 }
 
-.active, .preview:hover {
-    opacity: 1;
-    transition: .5s;
-}
-
-@media (max-aspect-ratio: 3/4), (min-resolution: 300dpi) and (orientation: portrait){
-    .section {
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
+@media (max-aspect-ratio: 3/4),
+(min-resolution: 300dpi) and (orientation: portrait) {
+    #photo-banner {
+        background-image: url('../images/history/home-and-village-bw-mobile.jpg');
+    }
+    #title {
+        position: absolute;
+        width: 100%;
+        font-family: 'Playfair Dispaly';
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+        bottom: 5%;
+        color: white;
+    }
+    #title {
+        font-size: 75px;
+    }
+    .right .description h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .left .description h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .right {
+        flex-direction: column;
+    }
+    .left {
         flex-direction: column-reverse;
     }
-
-    .left {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .divider {
-        width: 50%;
-        max-width: 500px;
-    }
-        
-    .photo {
-        width: 90%;
-    }
-    .nonno {
-        height: 60vh;
-        width: auto;
-    }
-    
-    .description {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .text {
-        width: 95%;
-        height: 50%;
-    }
-    
-    .text p {
-        font-size: max(min(3vw, 40px), 25px);
-        width: 100%;
-        height: 100%;
+    .section .text {
         text-align: center;
-        margin: 8px 0;
     }
-    
-    .redirect {
-        text-align: center;
-        font-size: max(min(1.5vw, 25px), 18px);
-        border: 2px solid #42321e;
-        border-radius: 5px;
-        padding: 8px;
-    } 
-    .redirect:visited {
-        color: #42321e;
+    #nineties {
+        max-height: none;
+        width: 100%;
     }
-    .redirect:hover {
-        border: 2px solid #42321e;
-        animation: none;
-        -webkit-animation: none;
-    }
-    .redirect:not(:hover) {
-        border: 2px solid #42321e;
-        animation: none;
-        -webkit-animation: none;
-    }
-
     .slideshow {
-        width: 90%;
+        width: 100%;
         left: 50%;
         transform: translate(-50%, 0);
         position: relative;
         bottom: 20px;
         height: 60vh;
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
-    
     .slide {
         display: none;
         height: 90%;
         margin-bottom: 5px;
     }
-    
     .slide img {
         width: auto;
         height: 100%;
         object-fit: scale-down;
     }
-
     .slide-caption-container {
         text-align: center;
         padding: 2px 16px;
         border: 2px solid #42321e;
-        height: 10%;
+        height: auto;
+    }
+    .prev,
+    .next {
+        width: 30px;
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+    }
+    p#slide-caption {
+        font-size: 35px;
     }
 }

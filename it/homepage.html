@@ -1,92 +1,115 @@
 <!DOCTYPE html>
-<html lang="it">
-    <head>
-        <title>Homepage</title>
+<html>
 
-        <!-- font da Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<head>
+    <title>Homepage</title>
 
-        <link rel="icon" href="../images/logo/logo_tab.ico">
-        <link rel="stylesheet" href="../style/homepage.css">
-        <link rel="stylesheet" href="../style/general.css">
-        <link rel="stylesheet" href="../style/bottombar.css">
+    <link rel="stylesheet" href="../style/homepage.css">
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/info-bar.css">
+    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="../style/top-bar.css">
 
-        <meta name="description" content="Azienda agricola Morra Andreas">
-        <meta name="author" content="Pietro Cagnasso">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    </head>
-    <body>
-        <div class="main-banner">
-            <div class="top-bar">
-                <a class="bring-home" href="../index.html"><img class="top-logo"></a>
-                <div class="top-bar-right">
-                    <a class="language" href="../en/homepage.html"><h1>EN</h1></a>
-                    <a class="language" href="../de/homepage.html"><h1>DE</h1></a>
-                    <!-- <a class="menu">
-                        <div class="hamburger">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
-                    </a> -->
-                </div>
+    <link rel="icon" href="../images/logo/logo-white-icon.png">
+
+    <!--font from Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap">
+
+    <script src="../scripts/menu.js"></script>
+</head>
+
+<body>
+    <div id="menu-page">
+        <div id="close-btn" onclick="closeMenu()"><img id="close-img" src="../images/icons/close-black.png"></div>
+        <div id="menu-content">
+            <div id="menu-logo-container">
+                <img id="menu-logo" src="../images/logo/logo-black-no-words.png">
             </div>
-            <div class="logo"></div>
-        </div>
-        <div class="container">
-            <p class="claim">Lavoriamo le nostre terre con determinazione ed amore per produrre la "Nocciola Piemonte IGP" delle Langhe.</p>
-            <hr class="divider">
-            <div class="section right">
-                <img class="history photo" src="../images/homepage/campi.jpg">
-                <div class="description">
-                    <div class="text">
-                        <p>Da quasi un secolo questi campi sono lavorati con dedizione dalla nostra famiglia</p>
-                    </div>
-                    <a class="redirect" href="./history.html">LA NOSTRA STORIA</a>
+            <div id="menu-voices">
+                <div class="menu-voice" onclick="location.href='./homepage.html';">
+                    <p class="voice-text">Homepage</p>
                 </div>
-            </div>
-            <hr class="divider">
-            <div class="section left">
-                <div class="description">
-                    <div class="text">
-                        <p>Dai nostri campi alla vostra tavola, gentile come sempre</p>
-                    </div>
-                    <a class="redirect" href="./products.html">I NOSTRI PRODOTTI</a>
+                <div class="menu-voice" onclick="location.href='./history.html';">
+                    <p class="voice-text">La nostra storia</p>
                 </div>
-                <img class="products photo" src="../images/homepage/nocciole.jpg">
-            </div>
-            <hr class="divider">
-            <div class="section right">
-                <img class="contacts photo" src="../images/homepage/phone.jpg">
-                <div class="description">
-                    <div class="text">
-                        <p>Vuoi saperne di più o sei interessato ai nostri prodotti?</p>
-                    </div>
-                    <a class="redirect" href="./contacts.html">CONTATTACI</a>
+                <div class="menu-voice" onclick="location.href='./products.html';">
+                    <p class="voice-text">I nostri prodotti</p>
+                </div>
+                <div class="menu-voice" onclick="location.href='./contacts.html';">
+                    <p class="voice-text">I nostri contatti</p>
                 </div>
             </div>
         </div>
-        <div class="bottom-banner">
-            <div class="company-info">
-                <div class="bottom-logo-wrapper">
-                    <img class="bottom-logo">
-                </div>
-                <div class="legal-info">
-                    <p>Azienda agricola Andreas Morra | P.iva 03815860048</p>
-                    <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
-                    <p><a href="tel:+393279947784">Tel.: +39-3279947784</a> | <a href="tel:+393331601545">Rif. comm.: +39-3331601545</a></p>
-                    <p class="contacts-link"><a class="mail" href="mailto:a.agricolamorra@gmail.com">e-mail: a.agricolamorra@gmail.com</a> | Social: <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="f-logo" src="../images/social/f_logo_RGB-Blue_512.png" style="height: 29px;"></a> | <a href="#"><img class="f-logo" src="../images/social/Instagram_Glyph_Gradient_RGB.png" style="height: 29px;"></a></p>
+    </div>
+    <div id="photo-banner">
+        <div id="menu" onclick="openMenu()"><img id="open-img" src="../images/icons/hamburger-white.png"></div>
+        <div class="lang-selector">
+            <div class="language"><img id="language-img" src="../images/icons/en-white.png"></div>
+            <div class="language"><img id="language-img" src="../images/icons/de-white.png"></div>
+        </div>
+        <img id="logo" src="../images/logo/logo-white.png">
+    </div>
+    <div id="container">
+        <p id="claim">
+            Lavoriamo le nostre terre con dedizione e amore per produrre la "Nocciola Piemonte IGP" delle Langhe, tonda e gentile come sempre.
+        </p>
+        <div class="section right">
+            <div class="description">
+                <p class="text">
+                    Per quasi un secolo la nostra storia si è intrecciata con quella di queste magnifiche terre
+                </p>
+                <div class="redirect" onclick="location.href='./history.html';">
+                    <p class="redirect-text">SCOPRI LA NOSTRA STORIA</p>
                 </div>
             </div>
-            <div class="dev-info">
-                <p>Sviluppato da Pietro Cagnasso | Fotografie di Giacomo Gatto</p>
+            <div class="icon">
+                <img id="history" src="../images/homepage/history-icon.png">
             </div>
         </div>
-    </body>
+        <div class="section left">
+            <div class="icon">
+                <img id="products" src="../images/homepage/products-icon.png">
+            </div>
+            <div class="description">
+                <p class="text">
+                    Portiamo dai nostri campi alla vostra tavola i gusti e gli aromi tipici di queste colline
+                </p>
+                <div class="redirect" onclick="location.href='./products.html';">
+                    <p class="redirect-text">SCOPRI I NOSTRI PRODOTTI</p>
+                </div>
+            </div>
+        </div>
+        <div class="contacts">
+            <p class="text">Qualche nostro prodotto ti interessa o vuoi avere maggiori informazioni?</p>
+            <div class="redirect" onclick="location.href='./contacts.html';">
+                <p class="redirect-text">SCOPRI TUTTI I NOSTRI CONTATTI</p>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <div id="info">
+        <div id="info-logo-container"><img id="info-logo" src="../images/logo/logo-black.png"></div>
+        <div id="legal-info">
+            <p>Azienda agricola Andreas Morra | P. iva 03815860048</p>
+            <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
+        </div>
+        <div id="contact-info">
+            <p>Tel.: +39-3279947784 | Rif. comm.: +39-3331601545</p>
+            <p>e-mail: a.agricolamorra@gmail.com</p>
+            <p>
+                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" src="../images/social/f_logo_RGB-Blue_512.png"></a>&nbsp;&nbsp;
+                <a><img class="social-icon" src="../images/social/Instagram_Glyph_Gradient_RGB.png"></a>
+            </p>
+        </div>
+    </div>
+    <div id="dev-info">
+        <p>Copyright 2021 - Tutti i diritti riservati | Realizzato da Pietro Cagnasso | Foto di Giacomo Gatto</p>
+    </div>
+</body>
+
 </html>

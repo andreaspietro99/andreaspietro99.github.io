@@ -58,10 +58,16 @@
         }
         #legal-info {
             width: 95%;
+        }
+        #legal-info p {
             font-size: 35px;
+            margin: 10px;
         }
         #contact-info {
             width: 95%;
+        }
+        #contact-info p {
             font-size: 35px;
+            margin: 10px;
         }
     }
