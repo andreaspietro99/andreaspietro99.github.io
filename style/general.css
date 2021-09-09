@@ -66,6 +66,14 @@ body {
     margin: 10px 0;
 }
 
+#note {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
 #title {
     position: absolute;
     width: 100%;
@@ -103,13 +111,19 @@ body {
 
 @media (max-aspect-ratio: 3/4),
 (min-resolution: 300dpi) and (orientation: portrait) {
+    body {
+        overflow-x: hidden;
+    }
     #container {
         width: 95%;
     }
     #claim {
-        font-size: 50px;
+        font-size: 4vh;
     }
     .text {
-        font-size: 45px;
+        font-size: 3vh;
+    }
+    #title {
+        font-size: 5vh;
     }
 }

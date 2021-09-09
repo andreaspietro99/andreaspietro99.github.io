@@ -62,14 +62,12 @@
 @media (max-aspect-ratio: 3/4),
 (min-resolution: 300dpi) and (orientation: portrait) {
     #menu {
-        left: 40px;
-        width: 100px;
-        height: 100px;
+        left: 20px;
+        width: 50px;
     }
     .language {
-        right: 40px;
-        width: 100px;
-        height: 100px;
+        right: 10px;
+        width: 50px;
     }
     #open-img {
         width: 100%;
@@ -78,10 +76,10 @@
         width: 100%;
     }
     #home-img {
-        width: 192px;
+        width: 100px;
     }
     .lang-selector {
-        right: 40px;
+        right: 20px;
         gap: 5px;
     }
     .lang-name {

@@ -50,24 +50,24 @@
             width: 40%;
         }
         .social-icon {
-            width: 70px;
+            width: 5vh;
         }
         #dev-info p {
-            font-size: 30px;
+            font-size: 1.5vh;
             width: 95%;
         }
         #legal-info {
             width: 95%;
         }
         #legal-info p {
-            font-size: 35px;
+            font-size: 2.5vh;
             margin: 10px;
         }
         #contact-info {
             width: 95%;
         }
         #contact-info p {
-            font-size: 35px;
+            font-size: 2.5vh;
             margin: 10px;
         }
     }

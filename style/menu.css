@@ -87,9 +87,8 @@
         transition: 0.5s;
     }
     #close-btn {
-        left: 40px;
-        width: 100px;
-        height: 100px;
+        left: 20px;
+        width: 50px;
     }
     #menu-content {
         flex-direction: column;
@@ -99,10 +98,13 @@
     #menu-voices {
         width: 100%;
     }
+    #menu-logo {
+        width: 80%;
+    }
     .menu-voice {
         width: 80%;
     }
     .voice-text {
-        font-size: 50px;
+        font-size: 4vh;
     }
 }
