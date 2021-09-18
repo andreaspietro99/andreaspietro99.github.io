@@ -114,6 +114,9 @@ body {
     body {
         overflow-x: hidden;
     }
+    #photo-banner {
+        height: 90vh;
+    }
     #container {
         width: 95%;
     }
