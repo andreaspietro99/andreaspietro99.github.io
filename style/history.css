@@ -44,16 +44,17 @@
     flex-direction: row;
 }
 
-.description h1 {
+.description h2 {
     font-family: 'Playfair Display';
     font-size: 30px;
+    font-weight: normal;
 }
 
-.right .description h1 {
+.right .description h2 {
     text-align: left;
 }
 
-.left .description h1 {
+.left .description h2 {
     text-align: right;
 }
 

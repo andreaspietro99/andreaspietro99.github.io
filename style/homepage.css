@@ -37,6 +37,7 @@
 .text {
     font-family: 'Playfair Display';
     font-size: 30px;
+    font-weight: normal;
 }
 
 .left .text {

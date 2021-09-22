@@ -5,6 +5,7 @@
 #igp-logo-sx {
     width: 200px;
     height: auto;
+    margin: auto;
 }
 
 #igp-logo-dx {
@@ -49,6 +50,7 @@
     font-family: 'Playfair Display';
     font-size: 30px;
     text-align: center;
+    font-weight: normal;
 }
 
 .text-description {
