@@ -1,5 +1,5 @@
 #photo-banner {
-    background-image: url('../images/homepage/home-and-fields.jpg');
+    background-image: url('../images/homepage/home-and-fields.webp');
 }
 
 #logo {
@@ -80,7 +80,7 @@
 @media (max-aspect-ratio: 3/4),
 (min-resolution: 300dpi) and (orientation: portrait) {
     #photo-banner {
-        background-image: url('../images/homepage/home-and-fields-mobile.jpg');
+        background-image: url('../images/homepage/home-and-fields-mobile.webp');
     }
     #logo {
         width: 75%;
