@@ -10,15 +10,11 @@
     <link rel="stylesheet" href="../style/menu.css">
     <link rel="stylesheet" href="../style/top-bar.css">
 
-    <link rel="icon" href="../images/logo/logo-white-icon.png">
+    <link rel="icon" href="../images/logo/logo-white-icon.webp">
 
     <!--font from Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="description" content="The story of a family business with almost a century of experience in hazelnut production in the Langhe in Italy.">
@@ -46,10 +42,10 @@
 
 <body onload="showSlide(0);">
     <div id="menu-page">
-        <div id="close-btn" onclick="closeMenu()"><img id="close-img" loading="lazy" src="../images/icons/close-black.png"></div>
+        <div id="close-btn" onclick="closeMenu()"><img id="close-img" loading="lazy" src="../images/icons/close-black.webp" alt="closing button"></div>
         <div id="menu-content">
             <div id="menu-logo-container">
-                <img id="menu-logo" loading="lazy" src="../images/logo/logo-black-no-words.png" alt="logo Azienda agricola Andreas Morra">
+                <img id="menu-logo" loading="lazy" src="../images/logo/logo-black-no-words.webp" alt="logo Azienda agricola Andreas Morra">
             </div>
             <div id="menu-voices">
                 <div class="menu-voice" onclick="location.href='./homepage.html';">
@@ -68,11 +64,11 @@
         </div>
     </div>
     <div id="photo-banner">
-        <div id="menu" onclick="openMenu()"><img id="open-img" loading="lazy" src="../images/icons/hamburger-white.png"></div>
-        <a id="home" href="./homepage.html"><img id="home-img" loading="lazy" src="../images/logo/logo-white-no-words.png" alt="logo Azienda agricola Andreas Morra"></a>
+        <div id="menu" onclick="openMenu()"><img id="open-img" loading="lazy" src="../images/icons/hamburger-white.webp" alt="opening button"></div>
+        <a id="home" href="./homepage.html"><img id="home-img" loading="lazy" src="../images/logo/logo-white-no-words.webp" alt="logo Azienda agricola Andreas Morra"></a>
         <div class="lang-selector">
-            <div class="language" onclick="location.href='../it/history.html';"><img id="language-img" loading="lazy" src="../images/icons/it-white.png"></div>
-            <div class="language" onclick="location.href='../de/history.html';"><img id="language-img" loading="lazy" src="../images/icons/de-white.png"></div>
+            <div class="language" onclick="location.href='../it/history.html';"><img class="language-img" loading="lazy" src="../images/icons/it-white.webp" alt="italian language"></div>
+            <div class="language" onclick="location.href='../de/history.html';"><img class="language-img" loading="lazy" src="../images/icons/de-white.webp" alt="deutchland language"></div>
         </div>
         <div id="title-container">
             <p id="title">OUR HISTORY</p>
@@ -97,12 +93,12 @@
                 </p>
             </div>
             <div class="icon">
-                <p><img id="thrities" loading="lazy" src="../images/history/anni-30.png" alt="Detail of the facade showing the year of construction">Detail of the facade showing the year of construction.</p>
+                <p><img id="thrities" loading="lazy" src="../images/history/anni-30.webp" alt="Detail of the facade showing the year of construction">Detail of the facade showing the year of construction.</p>
             </div>
         </div>
         <div class="section left">
             <div class="icon">
-                <p><img id="sixtiess" loading="lazy" src="../images/history/anni-60.png" alt="Luigi and Teresa with their granddaughter Loredana">Luigi and Teresa with their granddaughter Loredana</p>
+                <p><img id="sixtiess" loading="lazy" src="../images/history/anni-60.webp" alt="Luigi and Teresa with their granddaughter Loredana">Luigi and Teresa with their granddaughter Loredana</p>
             </div>
             <div class="description">
                 <h2>1960-1994</h2>
@@ -122,12 +118,12 @@
                 </p>
             </div>
             <div class="icon">
-                <p><img id="nineties" loading="lazy" src="../images/history/anni-90.png" alt="Giovanni with son-in-law Flavio and grandson Andreas"><br>Giovanni with son-in-law Flavio and grandson Andreas</p>
+                <p><img id="nineties" loading="lazy" src="../images/history/anni-90.webp" alt="Giovanni with son-in-law Flavio and grandson Andreas"><br>Giovanni with son-in-law Flavio and grandson Andreas</p>
             </div>
         </div>
         <div class="section left">
             <div class="icon">
-                <p><img id="today" loading="lazy" src="../images/history/oggi.png" alt="Loredana and her son Andreas">Loredana and her son Andreas</p>
+                <p><img id="today" loading="lazy" src="../images/history/oggi.webp" alt="Loredana and her son Andreas">Loredana and her son Andreas</p>
             </div>
             <div class="description">
                 <h2>Today</h2>
@@ -145,34 +141,34 @@
             <a class="next" onclick="next()">&#10095;</a>
 
             <div class="slide">
-                <img src="../images/history/slide/casa-pre-restauro.jpg" loading="lazy" style="width:100%" alt="Facade of the house before the last renovation">
+                <img src="../images/history/slide/casa-pre-restauro.webp" loading="lazy" style="width:100%" alt="Facade of the house before the last renovation">
             </div>
             <div class="slide">
-                <img src="../images/history/slide/casa-ristrutturata.jpg" loading="lazy" style="width:100%" alt="Facade of the house after the last renovation">
+                <img src="../images/history/slide/casa-ristrutturata.webp" loading="lazy" style="width:100%" alt="Facade of the house after the last renovation">
             </div>
             <div class="slide">
-                <img src="../images/history/slide/nonno-andreas-trattore.jpg" loading="lazy" style="width:100%" alt="Andreas as a child on the tractor driven by his grandfather Giovanni">
+                <img src="../images/history/slide/nonno-andreas-trattore.webp" loading="lazy" style="width:100%" alt="Andreas as a child on the tractor driven by his grandfather Giovanni">
             </div>
             <div class="slide">
-                <img src="../images/history/slide/campi-nocciole.jpg" loading="lazy" style="width:100%" alt="Hazel grove from the inside">
+                <img src="../images/history/slide/campi-nocciole.webp" loading="lazy" style="width:100%" alt="Hazel grove from the inside">
             </div>
             <div class="slide">
-                <img src="../images/history/slide/nocciole-secolari.jpg" loading="lazy" style="width:100%" alt="Secular hazel">
+                <img src="../images/history/slide/nocciole-secolari.webp" loading="lazy" style="width:100%" alt="Secular hazel">
             </div>
             <div class="slide">
-                <img src="../images/history/slide/nocciole-cortile.jpg" loading="lazy" style="width:100%" alt="Hazelnuts lying in the courtyard drying under sunlight">
+                <img src="../images/history/slide/nocciole-cortile.webp" loading="lazy" style="width:100%" alt="Hazelnuts lying in the courtyard drying under sunlight">
             </div>
             <div class="slide">
-                <img src="../images/history/slide/lavoro-campi.jpg" loading="lazy" style="width:100%" alt="Andreas at work in the fields">
+                <img src="../images/history/slide/lavoro-campi.webp" loading="lazy" style="width:100%" alt="Andreas at work in the fields">
             </div>
             <div class="slide">
-                <img src="../images/history/slide/lavoro-trattore.jpg" loading="lazy" style="width:100%" alt="Andreas driving a tractor">
+                <img src="../images/history/slide/lavoro-trattore.webp" loading="lazy" style="width:100%" alt="Andreas driving a tractor">
             </div>
             <div class="slide">
-                <img src="../images/history/slide/loredana-andreas.jpg" loading="lazy" style="width:100%" alt="Loredana and Andreas">
+                <img src="../images/history/slide/loredana-andreas.webp" loading="lazy" style="width:100%" alt="Loredana and Andreas">
             </div>
             <div class="slide">
-                <img src="../images/history/slide/casa-paese.jpg" loading="lazy" style="width:100%" alt="The house seen from afar with the village of Serravalle Langhe behind it">
+                <img src="../images/history/slide/casa-paese.webp" loading="lazy" style="width:100%" alt="The house seen from afar with the village of Serravalle Langhe behind it">
             </div>
 
             <div class="slide-caption-container">
@@ -182,7 +178,7 @@
     </div>
     <hr class="divider">
     <div id="info">
-        <div id="info-logo-container"><img id="info-logo" loading="lazy" src="../images/logo/logo-black.png" alt="logo Azienda agricola Andreas Morra"></div>
+        <div id="info-logo-container"><img id="info-logo" loading="lazy" src="../images/logo/logo-black.webp" alt="logo Azienda agricola Andreas Morra"></div>
         <div id="legal-info">
             <p>Azienda agricola Andreas Morra | P. iva 03815860048</p>
             <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
@@ -191,8 +187,8 @@
             <p>Phone: +39-3279947784 | Comm. Ref: +39-3331601545</p>
             <p>e-mail: a.agricolamorra@gmail.com</p>
             <p>
-                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" loading="lazy" src="../images/social/f_logo_RGB-Blue_512.png" alt="facebook logo, link alla nostra pagina"></a>&nbsp;&nbsp;
-                <a href="https://instagram.com/az.agr._andreas_morra/"><img class="social-icon" loading="lazy" src="../images/social/Instagram_Glyph_Gradient_RGB.png" alt="instagram logo, link alla nostra pagina"></a>
+                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" loading="lazy" src="../images/social/f_logo_RGB-Blue_512.webp" alt="facebook logo, link alla nostra pagina"></a>&nbsp;&nbsp;
+                <a href="https://instagram.com/az.agr._andreas_morra/"><img class="social-icon" loading="lazy" src="../images/social/Instagram_Glyph_Gradient_RGB.webp" alt="instagram logo, link alla nostra pagina"></a>
             </p>
         </div>
     </div>
