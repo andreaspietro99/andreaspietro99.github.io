@@ -28,8 +28,27 @@
     font-family: 'Playfair Display';
 }
 
+#thrities {
+    max-height: 500px;
+    height: 100%;
+    width: auto;
+}
+
+#sixtiess {
+    max-height: 500px;
+    height: 100%;
+    width: auto;
+}
+
 #nineties {
     max-height: 500px;
+    height: 100%;
+    width: auto;
+}
+
+#today {
+    max-height: 500px;
+    height: 100%;
     width: auto;
 }
 
