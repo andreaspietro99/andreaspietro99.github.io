@@ -42,7 +42,7 @@
     height: 50px;
 }
 
-.language-img {
+.language-img, #open-img, #close-img {
     position: relative;
     width: 100%;
     height: 100%;

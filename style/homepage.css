@@ -52,6 +52,11 @@
     text-align: center;
 }
 
+#history, #products {
+    width: 100%;
+    height: 100%;
+}
+
 .redirect {
     position: relative;
     width: 50%;

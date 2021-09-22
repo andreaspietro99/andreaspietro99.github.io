@@ -16,6 +16,7 @@
     
     #info-logo {
         width: 100%;
+        height: 100%;
         max-width: 256px;
     }
     
@@ -33,6 +34,7 @@
     
     .social-icon {
         width: 30px;
+        height: auto;
     }
     
     #dev-info {
