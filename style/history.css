@@ -1,5 +1,5 @@
 #photo-banner {
-    background-image: url('../images/history/home-and-village-bw.jpg');
+    background-image: url('../images/history/home-and-village-bw.webp');
 }
 
 #title {
@@ -159,7 +159,7 @@
 @media (max-aspect-ratio: 3/4),
 (min-resolution: 300dpi) and (orientation: portrait) {
     #photo-banner {
-        background-image: url('../images/history/home-and-village-bw-mobile.jpg');
+        background-image: url('../images/history/home-and-village-bw-mobile.webp');
     }
     #title {
         position: absolute;
