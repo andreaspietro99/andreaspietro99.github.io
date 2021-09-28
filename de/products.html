@@ -10,15 +10,11 @@
     <link rel="stylesheet" href="../style/menu.css">
     <link rel="stylesheet" href="../style/top-bar.css">
 
-    <link rel="icon" href="../images/logo/logo-white-icon.png">
+    <link rel="icon" href="../images/logo/logo-white-icon.webp">
 
     <!--font from Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="description" content="Präsentation unserer Produkte, alle mit unserer 'Nocciola Piemonte IGP' aus den Langhe als Hauptzutat">
@@ -31,10 +27,10 @@
 
 <body>
     <div id="menu-page">
-        <div id="close-btn" onclick="closeMenu()"><img id="close-img" src="../images/icons/close-black.png"></div>
+        <div id="close-btn" onclick="closeMenu()"><img id="close-img" src="../images/icons/close-black.webp" alt="closing button"></div>
         <div id="menu-content">
             <div id="menu-logo-container">
-                <img id="menu-logo" src="../images/logo/logo-black-no-words.png" alt="logo Azienda agricola Andreas Morra">
+                <img id="menu-logo" src="../images/logo/logo-black-no-words.webp" alt="logo Azienda agricola Andreas Morra">
             </div>
             <div id="menu-voices">
                 <div class="menu-voice" onclick="location.href='./homepage.html';">
@@ -53,11 +49,11 @@
         </div>
     </div>
     <div id="photo-banner">
-        <div id="menu" onclick="openMenu()"><img id="open-img" loading="lazy" src="../images/icons/hamburger-white.png"></div>
-        <a id="home" href="./homepage.html"><img id="home-img" loading="lazy" src="../images/logo/logo-white-no-words.png" alt="logo Azienda agricola Andreas Morra"></a>
+        <div id="menu" onclick="openMenu()"><img id="open-img" loading="lazy" src="../images/icons/hamburger-white.webp" alt="opening button"></div>
+        <a id="home" href="./homepage.html"><img id="home-img" loading="lazy" src="../images/logo/logo-white-no-words.webp" alt="logo Azienda agricola Andreas Morra"></a>
         <div class="lang-selector">
-            <div class="language" onclick="location.href='../it/products.html';"><img id="language-img" src="../images/icons/it-white.png"></div>
-            <div class="language" onclick="location.href='../en/products.html';"><img id="language-img" src="../images/icons/en-white.png"></div>
+            <div class="language" onclick="location.href='../it/products.html';"><img id="language-img" src="../images/icons/it-white.webp" alt="italian language"></div>
+            <div class="language" onclick="location.href='../en/products.html';"><img id="language-img" src="../images/icons/en-white.webp" alt="english language"></div>
         </div>
         <div id="title-container">
             <p id="title">UNSERE PRODUKTE</p>
@@ -67,11 +63,11 @@
         <p class="breadcrumb"><a class="link" href="./homepage.html">Homepage</a> &middot; <b>Produkte</b></p>
         <hr class="divider">
         <div class="section igp">
-            <img id="igp-logo-sx" loading="lazy" src="../images/products/igp.png" alt="Symbol Geschützte geografische Angabe (g.g.A.)">
+            <img id="igp-logo-sx" loading="lazy" src="../images/products/igp.webp" alt="Symbol Geschützte geografische Angabe (g.g.A.)">
             <h1 id="claim" style="margin: auto;">
                 Jedes unserer Produkte hat als Hauptzutat unseren "Nocciola Piemonte IGP*" aus den Langhe.
             </h1>
-            <img id="igp-logo-dx" loading="lazy" src="../images/products/igp.png" alt="Symbol Geschützte geografische Angabe (g.g.A.)">
+            <img id="igp-logo-dx" loading="lazy" src="../images/products/igp.webp" alt="Symbol Geschützte geografische Angabe (g.g.A.)">
         </div>
         <div id="section igp">
             <p id="note">*IGP ist die italienische Version von g.g.A.</p>
@@ -90,12 +86,12 @@
                 </div>
             </div>
             <div class="icon">
-                <img id="crema" loading="lazy" src="../images/products/crema-icon.png" alt="gianduia-creme präsentation">
+                <img id="crema" loading="lazy" src="../images/products/crema-icon.webp" alt="gianduia-creme präsentation">
             </div>
         </div>
         <div class="section left">
             <div class="icon">
-                <img id="guscio" loading="lazy" src="../images/products/guscio-icon.png" alt="Aufmachung von Haselnüssen in der Schale">
+                <img id="guscio" loading="lazy" src="../images/products/guscio-icon.webp" alt="Aufmachung von Haselnüssen in der Schale">
             </div>
             <div class="description">
                 <h2 class="text">
@@ -122,12 +118,12 @@
                 </div>
             </div>
             <div class="icon">
-                <img id="tostate" loading="lazy" src="../images/products/tostate-icon.png" alt="Präsentation gerösteter Haselnüsse">
+                <img id="tostate" loading="lazy" src="../images/products/tostate-icon.webp" alt="Präsentation gerösteter Haselnüsse">
             </div>
         </div>
         <div class="section left">
             <div class="icon">
-                <img id="olio" loading="lazy" src="../images/products/olio-icon.png" alt="Aufmachung von Haselnussöl">
+                <img id="olio" loading="lazy" src="../images/products/olio-icon.webp" alt="Aufmachung von Haselnussöl">
             </div>
             <div class="description">
                 <h2 class="text">
@@ -154,13 +150,13 @@
                 </div>
             </div>
             <div class="icon">
-                <img id="tegole" loading="lazy" src="../images/products/tegole-icon.png" alt="Präsentation von Haselnussfliesen">
+                <img id="tegole" loading="lazy" src="../images/products/tegole-icon.webp" alt="Präsentation von Haselnussfliesen">
             </div>
         </div>
     </div>
     <hr class="divider">
     <div id="info">
-        <div id="info-logo-container"><img id="info-logo" loading="lazy" src="../images/logo/logo-black.png" alt="logo Azienda agricola Andreas Morra"></div>
+        <div id="info-logo-container"><img id="info-logo" loading="lazy" src="../images/logo/logo-black.webp" alt="logo Azienda agricola Andreas Morra"></div>
         <div id="legal-info">
             <p>Azienda agricola Andreas Morra | P. iva 03815860048</p>
             <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
@@ -169,8 +165,8 @@
             <p>Telefon: +39-3279947784 | Komm. Ref.: +39-3331601545</p>
             <p>e-mail: a.agricolamorra@gmail.com</p>
             <p>
-                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" loading="lazy" src="../images/social/f_logo_RGB-Blue_512.png" alt="facebook logo, link alla nostra pagina"></a>&nbsp;&nbsp;
-                <a href="https://instagram.com/az.agr._andreas_morra/"><img class="social-icon" loading="lazy" src="../images/social/Instagram_Glyph_Gradient_RGB.png" alt="instagram logo, link alla nostra pagina"></a>
+                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" loading="lazy" src="../images/social/f_logo_RGB-Blue_512.webp" alt="facebook logo, link alla nostra pagina"></a>&nbsp;&nbsp;
+                <a href="https://instagram.com/az.agr._andreas_morra/"><img class="social-icon" loading="lazy" src="../images/social/Instagram_Glyph_Gradient_RGB.webp" alt="instagram logo, link alla nostra pagina"></a>
             </p>
         </div>
     </div>
