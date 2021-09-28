@@ -10,15 +10,11 @@
     <link rel="stylesheet" href="../style/menu.css">
     <link rel="stylesheet" href="../style/top-bar.css">
 
-    <link rel="icon" href="../images/logo/logo-white-icon.png">
+    <link rel="icon" href="../images/logo/logo-white-icon.webp">
 
     <!--font from Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="description" content="'Nocciola Piemonte IGP' delle Langhe in guscio selezionata ed essiccata in modo naturale">
@@ -34,7 +30,7 @@
             "@type": "Product",
             "name": "Nocciole in guscio",
             "image": [
-                "../images/products/guscio.jpg"
+                "../images/products/guscio.webp"
             ],
             "description": "'Nocciola Piemonte IGP' delle Langhe selezionata ed essiccata in modo naturale.",
             "brand": {
@@ -47,10 +43,10 @@
 
 <body>
     <div id="menu-page">
-        <div id="close-btn" onclick="closeMenu()"><img id="close-img" loading="lazy" src="../images/icons/close-black.png"></div>
+        <div id="close-btn" onclick="closeMenu()"><img id="close-img" loading="lazy" src="../images/icons/close-black.webp" alt="closing button"></div>
         <div id="menu-content">
             <div id="menu-logo-container">
-                <img id="menu-logo" loading="lazy" src="../images/logo/logo-black-no-words.png">
+                <img id="menu-logo" loading="lazy" src="../images/logo/logo-black-no-words.webp">
             </div>
             <div id="menu-voices">
                 <div class="menu-voice" onclick="location.href='./homepage.html';">
@@ -69,11 +65,11 @@
         </div>
     </div>
     <div id="photo-banner">
-        <div id="menu" onclick="openMenu()"><img id="open-img" loading="lazy" src="../images/icons/hamburger-white.png"></div>
-        <a id="home" href="./homepage.html"><img id="home-img" loading="lazy" src="../images/logo/logo-white-no-words.png" alt="logo Azienda agricola Andreas Morra"></a>
+        <div id="menu" onclick="openMenu()"><img id="open-img" loading="lazy" src="../images/icons/hamburger-white.webp" alt="opening button"></div>
+        <a id="home" href="./homepage.html"><img id="home-img" loading="lazy" src="../images/logo/logo-white-no-words.webp" alt="logo Azienda agricola Andreas Morra"></a>
         <div class="lang-selector">
-            <div class="language" onclick="location.href='../en/guscio.html';"><img id="language-img" loading="lazy" src="../images/icons/en-white.png"></div>
-            <div class="language" onclick="location.href='../de/guscio.html';"><img id="language-img" loading="lazy" src="../images/icons/de-white.png"></div>
+            <div class="language" onclick="location.href='../en/guscio.html';"><img id="language-img" loading="lazy" src="../images/icons/en-white.webp" alt="english language"></div>
+            <div class="language" onclick="location.href='../de/guscio.html';"><img id="language-img" loading="lazy" src="../images/icons/de-white.webp" alt="deutchland language"></div>
         </div>
         <div id="title-container">
             <p id="title">NOCCIOLE IN GUSCIO</p>
@@ -84,7 +80,7 @@
         <hr class="divider">
         <div id="content">
             <div id="image">
-                <img id="photo" loading="lazy" src="../images/products/guscio.jpg" alt="nocciole in guscio Azienda agricola Andreas Morra">
+                <img id="photo" loading="lazy" src="../images/products/guscio.webp" alt="nocciole in guscio Azienda agricola Andreas Morra">
             </div>
             <div id="description">
                 <p>
@@ -97,7 +93,7 @@
     </div>
     <hr class="divider">
     <div id="info">
-        <div id="info-logo-container"><img id="info-logo" loading="lazy" src="../images/logo/logo-black.png" alt="logo Azienda agricola Andreas Morra"></div>
+        <div id="info-logo-container"><img id="info-logo" loading="lazy" src="../images/logo/logo-black.webp" alt="logo Azienda agricola Andreas Morra"></div>
         <div id="legal-info">
             <p>Azienda agricola Andreas Morra | P. iva 03815860048</p>
             <p>Via Monastero, 1, Loc. Quazzo, 12050 Serravalle Langhe CN</p>
@@ -106,8 +102,8 @@
             <p>Tel.: +39-3279947784 | Rif. comm.: +39-3331601545</p>
             <p>e-mail: a.agricolamorra@gmail.com</p>
             <p>
-                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" loading="lazy" src="../images/social/f_logo_RGB-Blue_512.png" alt="facebook logo, link alla nostra pagina"></a>&nbsp;&nbsp;
-                <a href="https://instagram.com/az.agr._andreas_morra/"><img class="social-icon" loading="lazy" src="../images/social/Instagram_Glyph_Gradient_RGB.png" alt="instagram logo, link alla nostra pagina"></a>
+                <a href="https://www.facebook.com/AziendaAgricolaMorraAndreas/"><img class="social-icon" loading="lazy" src="../images/social/f_logo_RGB-Blue_512.webp" alt="facebook logo, link alla nostra pagina"></a>&nbsp;&nbsp;
+                <a href="https://instagram.com/az.agr._andreas_morra/"><img class="social-icon" loading="lazy" src="../images/social/Instagram_Glyph_Gradient_RGB.webp" alt="instagram logo, link alla nostra pagina"></a>
             </p>
         </div>
     </div>
