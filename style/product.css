@@ -1,5 +1,5 @@
 #photo-banner {
-    background-image: url('../images/products/all-products.jpg');
+    background-image: url('../images/products/all-products.webp');
 }
 
 #title {
@@ -34,7 +34,7 @@
 @media (max-aspect-ratio: 3/4),
 (min-resolution: 300dpi) and (orientation: portrait) {
     #photo-banner {
-        background-image: url('../images/products/all-products-mobile.jpg');
+        background-image: url('../images/products/all-products-mobile.webp');
     }
     #title {
         font-size: 75px;

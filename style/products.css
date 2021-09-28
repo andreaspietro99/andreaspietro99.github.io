@@ -1,5 +1,5 @@
 #photo-banner {
-    background-image: url('../images/products/hazelnuts-flowers.jpg');
+    background-image: url('../images/products/hazelnuts-flowers.webp');
 }
 
 #igp-logo-sx {
@@ -88,7 +88,7 @@
 @media (max-aspect-ratio: 3/4),
 (min-resolution: 300dpi) and (orientation: portrait) {
     #photo-banner {
-        background-image: url('../images/products/hazelnuts-flowers-mobile.jpg');
+        background-image: url('../images/products/hazelnuts-flowers-mobile.webp');
     }
     #title {
         position: absolute;
