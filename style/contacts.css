@@ -1,5 +1,5 @@
 #photo-banner {
-    background-image: url('../images/contacts/home-from-fields.jpg');
+    background-image: url('../images/contacts/home-from-fields.webp');
 }
 
 #title {
@@ -22,7 +22,7 @@
 @media (max-aspect-ratio: 3/4),
 (min-resolution: 300dpi) and (orientation: portrait) {
     #photo-banner {
-        background-image: url('../images/contacts/home-from-fields-mobile.jpg');
+        background-image: url('../images/contacts/home-from-fields-mobile.webp');
     }
     #title {
         position: absolute;
