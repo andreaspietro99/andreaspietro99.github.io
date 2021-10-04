@@ -58,14 +58,12 @@
 }
 
 .redirect {
-    position: relative;
-    width: 50%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    padding: 10px;
     border-radius: 5px;
-    transition: 0.5s;
     cursor: pointer;
+    transition: 0.5s;
+    width: 60%;
+    margin: auto;
+    text-decoration: none;
 }
 
 .contacts .redirect {
@@ -76,10 +74,15 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.redirect:visited {
+    color: #000;
+}
+
 .redirect-text {
     text-align: center;
     font-size: 22px;
     margin: 0;
+    color: #000;
 }
 
 @media (max-aspect-ratio: 3/4),

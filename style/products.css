@@ -64,23 +64,25 @@
 }
 
 .redirect {
-    position: relative;
-    text-align: center;
-    width: 50%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    padding: 10px;
     border-radius: 5px;
-    transition: 0.5s;
     cursor: pointer;
+    transition: 0.5s;
+    width: 60%;
+    margin: auto;
+    text-decoration: none;
+    color: #000;
 }
 
 .redirect:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.redirect:visited {
+    color: #000;
+}
+
 .redirect-text {
-    display: inline-block;
+    text-align: center;
     font-size: 22px;
     margin: 0;
 }

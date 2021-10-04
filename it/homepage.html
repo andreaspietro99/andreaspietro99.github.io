@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="../style/top-bar.css">
 
     <link rel="icon" href="../images/logo/logo-white-icon.webp">
-    
-    <link rel="preload" as="image" href="/images/homepage/home-and-fields.webp" />
 
     <!--font from Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
@@ -35,26 +33,26 @@
                 <img id="menu-logo" src="../images/logo/logo-black.webp" alt="logo Azienda agricola Andreas Morra">
             </div>
             <div id="menu-voices">
-                <div class="menu-voice" onclick="location.href='./homepage.html';">
+                <a class="menu-voice" href="./homepage.html">
                     <p class="voice-text">Homepage</p>
-                </div>
-                <div class="menu-voice" onclick="location.href='./history.html';">
+                </a>
+                <a class="menu-voice" href="./history.html">
                     <p class="voice-text">La nostra storia</p>
-                </div>
-                <div class="menu-voice" onclick="location.href='./products.html';">
+                </a>
+                <a class="menu-voice" href="./products.html">
                     <p class="voice-text">I nostri prodotti</p>
-                </div>
-                <div class="menu-voice" onclick="location.href='./contacts.html';">
+                </a>
+                <a class="menu-voice" href="./contacts.html">
                     <p class="voice-text">I nostri contatti</p>
-                </div>
+                </a>
             </div>
         </div>
     </div>
     <div id="photo-banner">
         <div id="menu" onclick="openMenu()"><img id="open-img" loading="lazy" src="../images/icons/hamburger-white.webp" alt="opening button"></div>
         <div class="lang-selector">
-            <div class="language" onclick="location.href='../en/homepage.html';"><img class="language-img" loading="lazy" src="../images/icons/en-white.webp" alt="english language"></div>
-            <div class="language" onclick="location.href='../de/homepage.html';"><img class="language-img" loading="lazy" src="../images/icons/de-white.webp" alt="deutchland language"></div>
+            <a class="language" href="../en/homepage.html"><img class="language-img" loading="lazy" src="../images/icons/en-white.webp" alt="english language"></a>
+            <a class="language" href="../de/homepage.html"><img class="language-img" loading="lazy" src="../images/icons/de-white.webp" alt="deutchland language"></a>
         </div>
         <img id="logo" loading="lazy" src="../images/logo/logo-white.webp" alt="logo Azienda agricola Andreas Morra">
     </div>
@@ -69,12 +67,12 @@
                 <h2 class="text">
                     Per quasi un secolo la nostra storia si è intrecciata con quella di queste magnifiche terre
                 </h2>
-                <div class="redirect" onclick="location.href='./history.html';">
+                <a class="redirect" href="./history.html">
                     <p class="redirect-text">SCOPRI LA NOSTRA STORIA</p>
-                </div>
+                </a>
             </div>
             <div class="icon">
-                <img id="history loading=" lazy "" src="../images/homepage/history-icon.webp" alt="la casa vista da lontano con alle spalle il paese, bianco e nero, icona">
+                <img id="history" loading="lazy" src="../images/homepage/history-icon.webp" alt="la casa vista da lontano con alle spalle il paese, bianco e nero, icona">
             </div>
         </div>
         <div class="section left">
@@ -85,16 +83,16 @@
                 <h2 class="text">
                     Portiamo dai nostri campi alla vostra tavola i gusti e gli aromi tipici di queste colline
                 </h2>
-                <div class="redirect" onclick="location.href='./products.html';">
+                <a class="redirect" href="./products.html">
                     <p class="redirect-text">SCOPRI I NOSTRI PRODOTTI</p>
-                </div>
+                </a>
             </div>
         </div>
         <div class="contacts">
             <p class="text">Qualche nostro prodotto ti interessa o vuoi avere maggiori informazioni?</p>
-            <div class="redirect" onclick="location.href='./contacts.html';">
+            <a class="redirect" href="./contacts.html">
                 <p class="redirect-text">SCOPRI TUTTI I NOSTRI CONTATTI</p>
-            </div>
+            </a>
         </div>
     </div>
     <hr class="divider">

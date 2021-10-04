@@ -66,6 +66,11 @@
     transition: 0.5s;
     width: 60%;
     margin: auto;
+    text-decoration: none;
+}
+
+.menu-voice:visited {
+    color: #000;
 }
 
 .menu-voice:hover {
