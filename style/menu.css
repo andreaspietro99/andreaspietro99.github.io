@@ -1,116 +1,109 @@
 #menu-page {
     width: 100vw;
     height: 0;
-    overflow: hidden;
-    background-color: var(--grey);
-    transition: 0.3s;
+    overflow-y: hidden;
+    background-color: #E9D3C0;
 }
 
-#close-btn {
+#menu-close {
     position: relative;
     left: 20px;
     top: 20px;
-    border-radius: 5px;
-    cursor: pointer;
     width: 50px;
     height: 50px;
-    transition: 0.5s;
 }
 
-#close-img {
+#menu-close:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#menu-close-img {
+    height: 100%;
     width: 100%;
 }
 
-#close-btn:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-#menu-content {
+#menu-container {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    height: 60%;
     width: 80%;
-    left: 50%;
-    top: 50%;
-    transform: trnslate(-50%, -50%);
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    gap: min(20px, max(10px, 2vh));
 }
 
 #menu-logo-container {
     flex: 1;
-    opacity: 0.5;
     text-align: center;
 }
 
 #menu-logo {
+    position: relative;
+    height: auto;
     width: 100%;
-    height: 100%;
-    max-width: 384px;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 #menu-voices {
+    position: relative;
     flex: 1;
-    text-align: center;
     margin: auto;
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
-    gap: 20px;
+    -webkit-flex-direction: column;
+    gap: min(20px, max(10px, 2vh));
+    text-align: center;
 }
 
-.menu-voice {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s;
-    width: 60%;
-    margin: auto;
+.voice, .voice:visited {
+    position: relative;
+    left: 50%;
+    padding: 0;
+    width: 50%;
     text-decoration: none;
-}
-
-.menu-voice:visited {
+    font-family: 'Playfair Display';
+    font-size: min(35px, max(25px, 1.5vw));
     color: #000;
+    transform: translate(-50%, 0);
+    transition: 350ms;
 }
 
-.menu-voice:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+.voice:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;;
 }
 
-.voice-text {
-    font-family: "Playfair Display";
-    font-size: 35px;
-    margin: 0;
+#menu-open {
+    cursor: pointer;
 }
 
-@media (max-aspect-ratio: 3/4),
-(min-resolution: 300dpi) and (orientation: portrait) {
-    #menu-page {
-        width: 100vw;
-        height: 0;
-        overflow: hidden;
-        background-color: var(--grey);
-        transition: 0.5s;
+@media (orientation: portrait) and (min-resolution: 200dpi) {
+    #menu-close {
+        border-radius: 15px;
+        width: 150px;
+        height: 150px;
     }
-    #close-btn {
-        left: 20px;
-        width: 50px;
-    }
-    #menu-content {
+    #menu-container {
+        height: 80%;
         flex-direction: column;
-        gap: 50px;
-        width: 90%;
+        -webkit-flex-direction: column;
     }
     #menu-voices {
+        gap: min(50px, max(35px, 2vh));
+    }
+    .voice, .voice:visited {
         width: 100%;
-    }
-    #menu-logo {
-        width: 80%;
-    }
-    .menu-voice {
-        width: 80%;
-    }
-    .voice-text {
-        font-size: 4vh;
+        font-size: min(70px, max(55px, 1.5vw));
+        border: 3px solid #000;
+        border-radius: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }

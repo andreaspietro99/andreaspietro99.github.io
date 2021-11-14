@@ -1,119 +1,53 @@
-#photo-banner {
-    background-image: url('../images/history/home-and-village-bw.webp');
+#front-image{
+    background: url("../images/history/history.jpg") no-repeat;
 }
 
-#title {
-    position: absolute;
-    width: 100%;
-    font-family: 'Playfair Dispaly';
-    font-size: 50px;
-    margin: 0;
-    text-align: center;
-    bottom: 5%;
-    color: white;
-}
-
-.icon {
+.section-img {
     margin: auto;
-    text-align: center;
-    flex: 2;
-    padding: 10px;
 }
 
-.icon img {
-    width: 100%;
-}
-
-.icon p {
-    font-family: 'Playfair Display';
-}
-
-#thrities {
-    max-height: 500px;
-    height: 100%;
-    width: auto;
-}
-
-#sixtiess {
-    max-height: 500px;
-    height: 100%;
-    width: auto;
-}
-
-#nineties {
-    max-height: 500px;
-    height: 100%;
-    width: auto;
-}
-
-#today {
-    max-height: 500px;
-    height: 100%;
-    width: auto;
-}
-
-.description {
-    margin: auto;
-    flex: 3;
-    padding: 10px;
-}
-
-.section {
-    display: flex;
-    flex-direction: row;
-}
-
-.description h2 {
-    font-family: 'Playfair Display';
-    font-size: 30px;
-    font-weight: normal;
-}
-
-.right .description h2 {
-    text-align: left;
-}
-
-.left .description h2 {
-    text-align: right;
-}
-
-.description p {
+.section-text p {
     text-align: justify;
-    font-size: 22px;
-    font-weight: 300;
+    font-size: min(26px, max(20px, 1.2vw));
 }
 
-.slideshow {
+#anni-90 {
+    max-height: 50vh;
+    width: auto;
+}
+
+.section-img p {
+    font-family: "Playfair Display";
+    font-size: min(18px, max(14px, 1.2vw));
+}
+
+#slideshow {
     position: relative;
-    width: 100%;
-    bottom: 20px;
+    display: block;
     height: 80vh;
-    margin-top: 20px;
-    margin-bottom: 5px;
 }
 
 .slide {
+    background-color: #725e4d;
+    border: 2px solid #ebe6e1;
     display: none;
-    height: 95%;
     margin-bottom: 5px;
-    background-color: rgba(66, 50, 30, .6);
+    text-align: center;
+    height: 95%;
+    margin: auto;
 }
 
-.slide img {
-    width: auto;
-    height: 100%;
+.slide-img {
     object-fit: scale-down;
-}
-
-.thumbnail {
-    cursor: pointer;
+    height: 100%;
+    width: 100%;
 }
 
 .prev,
 .next {
     cursor: pointer;
     position: absolute;
-    top: 47.5%;
+    top: 50%;
     transform: translate(0, -50%);
     width: auto;
     padding: 16px;
@@ -126,126 +60,70 @@
 }
 
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: 2px;
+    border-radius: 5px 0 0 5px;
 }
 
 .prev {
-    left: 0;
-    border-radius: 0 3px 3px 0;
+    left: 2px;
+    border-radius: 0 5px 5px 0;
 }
 
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-    vertical-align: middle;
 }
 
-.slide-caption-container {
+#slide-caption-container {
     text-align: center;
     padding: 4px 16px;
-    border: 2px solid #42321e;
+    border: 2px solid #725e4d;
 }
 
 #slide-caption {
-    color: #42321e;
     margin: auto;
     font-family: 'Playfair Display';
+    font-size: min(18px, max(14px, 1.2vw));
 }
 
-.thumbnails:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.thumbnails {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
-
-.thumbnail {
-    flex: 1;
-    margin: auto;
-}
-
-.preview {
-    position: relative;
-    opacity: 0.4;
-}
-
-@media (max-aspect-ratio: 3/4),
-(min-resolution: 300dpi) and (orientation: portrait) {
-    #photo-banner {
-        background-image: url('../images/history/home-and-village-bw-mobile.webp');
+@media (orientation: portrait) and (min-resolution: 200dpi) {
+    .section-text p {
+        font-size: min(45px, max(40px, 1.2vh));
     }
-    #title {
-        position: absolute;
-        width: 100%;
-        font-family: 'Playfair Dispaly';
-        font-size: 50px;
-        margin: 0;
-        text-align: center;
-        bottom: 5%;
-        color: white;
+    #anni-90 {
+        height: 70vh;
     }
-    #title {
-        font-size: 75px;
+    .section-img p {
+        font-size: min(20px, max(16px, 1.2vh));
     }
-    .right .description h1 {
-        text-align: center;
-        font-size: 4vh;
-    }
-    .left .description h1 {
-        text-align: center;
-        font-size: 4vh;
-    }
-    .right {
-        flex-direction: column;
-    }
-    .left {
-        flex-direction: column-reverse;
-    }
-    .section .text {
-        text-align: center;
-    }
-    #nineties {
-        max-height: none;
-        width: 100%;
-    }
-    .slideshow {
-        width: 100%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        position: relative;
-        bottom: 20px;
-        height: 60vh;
+    #slideshow {
+        height: 40vh;
     }
     .slide {
-        display: none;
-        height: 90%;
-        margin-bottom: 5px;
+        height: 95%;
+        width: 100%;
     }
     .slide img {
-        width: auto;
-        height: 100%;
-        object-fit: scale-down;
+        object-fit: contain;
     }
-    .slide-caption-container {
+    #slide-caption-container {
         text-align: center;
-        padding: 2px 16px;
-        border: 2px solid #42321e;
-        height: auto;
+        padding: 4px 16px;
+        border: 4px solid #725e4d;
+    }
+    #slide-caption {
+        font-size: min(32px, max(24px, 1.5vh));
     }
     .prev,
     .next {
-        width: 30px;
-        font-size: 30px;
-        text-align: center;
-        margin: auto;
+        font-size: 60px;
     }
-    p#slide-caption {
-        font-size: 2vh;
+    .next {
+        right: 2px;
+        border-radius: 5px 0 0 5px;
+    }
+    .prev {
+        left: 2px;
+        border-radius: 0 5px 5px 0;
     }
 }

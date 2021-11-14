@@ -1,137 +1,87 @@
-#photo-banner {
-    background-image: url('../images/products/hazelnuts-flowers.webp');
+#front-image{
+    background: url("../images/products/products.jpg") no-repeat;
 }
 
-#igp-logo-sx {
-    width: 200px;
-    height: auto;
-    margin: auto;
-}
-
-#igp-logo-dx {
-    width: 200px;
-    height: auto;
-    margin: auto;
-}
-
-.icon {
-    margin: auto;
-    text-align: center;
-    flex: 2;
-    padding: 10px;
-}
-
-.icon img {
-    width: 100%;
-}
-
-.icon p {
-    font-family: 'Playfair Display';
-}
-
-#guscio {
-    max-height: 450px;
-    width: auto;
-}
-
-#olio {
-    max-height: 450px;
-    width: auto;
-}
-
-.description {
-    margin: auto;
-    flex: 3;
-    padding: 10px;
-}
-
-.text {
-    margin: 0;
-    font-family: 'Playfair Display';
-    font-size: 30px;
-    text-align: center;
-    font-weight: normal;
-}
-
-.text-description {
-    text-align: center;
-    font-size: 22px;
-}
-
-.section {
+#claim-3 {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
 }
 
-.redirect {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s;
-    width: 60%;
+#claim-3 h1 {
     margin: auto;
-    text-decoration: none;
-    color: #000;
-}
-
-.redirect:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.redirect:visited {
-    color: #000;
-}
-
-.redirect-text {
+    font-family: "Playfair display";
     text-align: center;
-    font-size: 22px;
-    margin: 0;
+    font-style: italic;
+    font-size: min(45px, max(35px, 1.5vw));
+    font-weight: 500;
 }
 
-@media (max-aspect-ratio: 3/4),
-(min-resolution: 300dpi) and (orientation: portrait) {
-    #photo-banner {
-        background-image: url('../images/products/hazelnuts-flowers-mobile.webp');
+#igp {
+    object-fit: scale-down;
+    width: 20%;
+    height: auto;
+}
+
+.section-text a, .section-text a:visited {
+    position: relative;
+    text-decoration: none;
+    font-size: min(30px, max(25px, 1.2vw));
+    color: #000;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 350ms;
+}
+
+.section-text a:hover {
+    background-color:rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.section-text h2{
+    text-align: center;
+}
+
+.section-text p {
+    text-align: center;
+    font-size: min(26px, max(20px, 1.2vw));
+}
+
+.vertical {
+    object-fit: scale-down;
+    max-height: 50vh;
+    width: auto;
+}
+
+@media (orientation: portrait) and (min-resolution: 200dpi) {
+    #claim-3 {
+        flex-direction: column;
+        -webkit-flex-direction: column;
     }
-    #title {
-        position: absolute;
-        width: 100%;
-        font-family: 'Playfair Dispaly';
-        font-size: 50px;
-        margin: 0;
-        text-align: center;
-        bottom: 5%;
-        color: white;
+    #claim-3 h1{
+        font-size: min(75px, max(65px, 1.5vw));
     }
-    #title {
-        font-size: 75px;
-    }
-    #igp-logo-sx {
+    .disappear {
         display: none;
     }
-    #igp-logo-dx {
-        width: 400px;
+    #igp {
+        margin: auto;
+        object-fit: scale-down;
+        width: 60%;
+        height: auto;
     }
-    .igp {
-        flex-direction: column;
+    .section-text p {
+        font-size: min(45px, max(40px, 1.2vh));
     }
-    #guscio {
-        max-height: none;
-        width: 100%;
-    }
-    #olio {
-        max-height: none;
-        width: 100%;
-    }
-    .right {
-        flex-direction: column;
-    }
-    .left {
-        flex-direction: column-reverse;
-    }
-    .section .text {
-        text-align: center;
-    }
-    .redirect-text {
-        font-size: 2.5vh;
+    .vertical {
+        height: 70vh;
+        object-fit: none;
+        margin: none;
     }
 }

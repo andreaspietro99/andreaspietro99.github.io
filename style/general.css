@@ -1,100 +1,102 @@
-:root {
-    /* --beige: #E9D3C0; */
-    --grey: #DADADA;
-}
-
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
-    font-family: 'Open sans';
-}
-
-body {
-    background-color: var(--grey);
+    font-family: "Open sans";
+    background-color: #E9D3C0;
     overflow: overlay;
 }
 
-.breadcrumb {
-    text-align: center;
-    font-size: 20px;
-}
-
-.link {
-    text-decoration: none;
-    color: black;
-}
-
-.link:visited {
-    color: black;
-}
-
-#photo-banner {
+#container {
+    width: 100vw;
     position: relative;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    gap: min(20px, max(10px, 2vh));
+}
+
+#front-image {
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position-x: center;
     height: 100vh;
     width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-#container {
+#claim {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#claim h1 {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-size: min(45px, max(35px, 1.5vw));
+    font-weight: 500;
+}
+
+.section {
     position: relative;
     width: 80%;
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    gap: min(20px, max(10px, 2vw));
 }
 
-.section-divider {
-    display: none;
-    border-top: 2px solid black;
-    border-radius: 2px;
-    width: 90%;
-}
-
-#claim {
-    font-family: 'Playfair Display';
-    font-style: italic;
-    font-size: 35px;
+.section-text {
+    flex:2;
+    margin: auto;
     text-align: center;
-    margin: 10px 0;
-    font-weight: normal;
 }
 
-#note {
-    font-family: 'Playfair Display';
-    font-style: italic;
-    font-size: 20px;
+.section-text h2 {
+    font-family: "Playfair Display";
+    font-size: min(35px, max(28px, 1.5vw));
+    font-weight: 400;
+}
+
+.section-img {
+    flex: 1;
     text-align: center;
-    margin: 0;
 }
 
-#title {
-    position: absolute;
+.section-img img {
     width: 100%;
-    font-family: 'Playfair Dispaly';
-    font-size: 50px;
-    margin: 0;
-    text-align: center;
-    bottom: 5%;
-    color: white;
 }
 
-.divider {
-    border-top: 2px solid black;
-    border-radius: 2px;
-    width: 60%;
+.center h2 {
+    text-align: center;
+}
+
+#breadcrumb p {
+    text-align: center;
+    margin: auto;
+    font-size: min(21px, max(18px, 1.2vw));
+}
+
+#breadcrumb a {
+    text-decoration: none;
+    color: #000;
+}
+
+#breadcrumb a:visited {
+    text-decoration: none;
+    color: #000;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
     height: 10px;
 }
 
@@ -104,31 +106,53 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, .5);
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, .88);
 }
 
-@media (max-aspect-ratio: 3/4),
-(min-resolution: 300dpi) and (orientation: portrait) {
-    body {
-        overflow-x: hidden;
-    }
-    #photo-banner {
-        height: 100vh;
-    }
+@media (orientation: portrait) and (min-resolution: 200dpi) {
     #container {
-        width: 95%;
+        gap: min(30px, max(20px, 2vh));
     }
-    #claim {
-        font-size: 4vh;
+    .section {
+        width: 90%;
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        gap: min(10px, max(5px, 2vh));
     }
-    .text {
-        font-size: 3vh;
+    .left, .center {
+        flex-direction: column;
+        -webkit-flex-direction: column;
     }
-    #title {
-        font-size: 5vh;
+    #claim h1 {
+        font-size: min(75px, max(65px, 1.5vw));
+    }
+    .section-img img {
+        width: 100%;
+    }
+    .section h2 {
+        text-align: center;
+        font-size: min(70px, max(60px, 1.2vw));
+        margin: 20px 0;
+    }
+    .section-text a, .section-text a:visited {
+        font-size: min(65px, max(55px, 1.2vw));
+        margin: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        border: 2px solid #000;
+        border-radius: 15px;
+    }
+    #breadcrumb p {
+        font-size: min(30px, max(25px, 1.2vw));
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
     }
 }

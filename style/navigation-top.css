@@ -1,0 +1,59 @@
+#menu-open {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    transition: 350ms;
+}
+
+#menu-open:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#menu-open-img {
+    height: 100%;
+    width: 100%;
+}
+
+#lang-selector {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    gap: min(20px, max(10px, 2vw));
+}
+
+.lang, .lang:visited {
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    transition: 350ms;
+}
+
+.lang:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.lang-img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (orientation: portrait) and (min-resolution: 200dpi) {
+    #menu-open {
+        border-radius: 15px;
+        width: 150px;
+        height: 150px;
+    }
+    .lang {
+        height: 150px;
+        width: 150px;
+        border-radius: 15px;
+    }
+}
