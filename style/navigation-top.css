@@ -56,4 +56,8 @@
         width: 150px;
         border-radius: 15px;
     }
+    #lang-selector {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
 }

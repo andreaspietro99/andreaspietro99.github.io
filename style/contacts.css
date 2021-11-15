@@ -17,8 +17,10 @@
     width: 50px;
 }
 
-.center p {
+.section-text p {
     font-size: min(26px, max(20px, 1.2vw));
+    margin: 0;
+    padding: 0;
 }
 
 #map {

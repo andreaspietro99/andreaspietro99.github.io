@@ -87,6 +87,9 @@
 }
 
 @media (orientation: portrait) and (min-resolution: 200dpi) {
+    #front-image{
+        background: url("../images/history/history-mobile.jpg") no-repeat;
+    }
     .section-text p {
         font-size: min(45px, max(40px, 1.2vh));
     }

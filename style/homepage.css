@@ -34,3 +34,9 @@
 .left h2 {
     text-align: right;
 }
+
+@media (orientation: portrait) and (min-resolution: 200dpi) {
+    #front-image{
+        background: url("../images/homepage/homepage-mobile.jpg") no-repeat center center;
+    }
+}

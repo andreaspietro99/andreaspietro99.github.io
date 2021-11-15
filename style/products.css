@@ -60,6 +60,9 @@
 }
 
 @media (orientation: portrait) and (min-resolution: 200dpi) {
+    #front-image{
+        background: url("../images/products/products-mobile.jpg") no-repeat;
+    }
     #claim-3 {
         flex-direction: column;
         -webkit-flex-direction: column;
