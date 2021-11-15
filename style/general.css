@@ -5,7 +5,7 @@ html, body {
     width: 100vw;
     font-family: "Open sans";
     background-color: #E9D3C0;
-    overflow: overlay;
+    overflow-x: hidden;
 }
 
 #container {
@@ -95,24 +95,6 @@ html, body {
     color: #000;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0);
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, .5);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, .88);
-}
-
 @media (orientation: portrait) and (min-resolution: 200dpi) {
     #container {
         gap: min(30px, max(20px, 2vh));
@@ -148,11 +130,5 @@ html, body {
     }
     #breadcrumb p {
         font-size: min(55px, max(35px, 1.2vw));
-    }
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    ::-webkit-scrollbar-thumb {
-        border-radius: 5px;
     }
 }
