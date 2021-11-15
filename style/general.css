@@ -147,7 +147,7 @@ html, body {
         border-radius: 15px;
     }
     #breadcrumb p {
-        font-size: min(30px, max(25px, 1.2vw));
+        font-size: min(55px, max(35px, 1.2vw));
     }
     ::-webkit-scrollbar {
         width: 10px;

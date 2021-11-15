@@ -64,7 +64,7 @@
         transform: translate(0, 0);
     }
     #legal-info, #contacts-info {
-        font-size: min(30px, max(25px, 1.2vw));
+        font-size: min(55px, max(35px, 1.2vw));
     }
     .social-img {
         height: 100px;
@@ -77,6 +77,6 @@
         transform: translate(-50%, 0);
     }
     #dev-info p {
-        font-size: min(15px, max(10px, 1.2vw));
+        font-size: min(55px, max(30px, 1.2vw));
     }
 }

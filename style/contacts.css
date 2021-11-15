@@ -1,0 +1,49 @@
+#front-image{
+    background: url("../images/contacts/contacts.jpg") no-repeat;
+}
+
+.links {
+    text-align: center;
+}
+
+.section-links a {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 50px;
+}
+
+.social-img-big {
+    height: 50px;
+    width: 50px;
+}
+
+.center p {
+    font-size: min(26px, max(20px, 1.2vw));
+}
+
+#map {
+    width: 70%;
+    height: 50vh;
+    margin: auto;
+}
+
+@media (orientation: portrait) and (min-resolution: 200dpi) {
+    #map {
+        width: 100%;
+        height: 50vh;
+        margin: auto;
+    }
+    .section-text p {
+        font-size: min(45px, max(40px, 1.2vh));
+    }
+    .social-img-big {
+        height: 100px;
+        width: 100px;
+    }
+    .social-big {
+        border: none;
+    }
+    .section-text a, .section-text a:visited {
+        border: none;
+    }
+}
